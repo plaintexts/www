@@ -1,0 +1,40 @@
+/* This is a style for the content of the pages. */
+
+.content { width: 40em; font-size: 12pt; font-family: "DejaVu Serif", Georgia, serif; color: #222; padding: 12pt 30pt; margin: 0; background: #fff; position: relative; }
+.content pre 
+  { white-space: pre; font-family: "DejaVu Sans Mono", "Lucida Console", monospace; font-size: 12pt; background: #eee; padding: 6pt; border: 1px dashed #999; margin: 6pt -6pt; color: #444;
+    /* css 3 or browser specific rules - do not remove! see: http://forums.techguy.org/archive/index.php/t-249849.html */
+    white-space: pre-wrap; word-wrap: break-word; white-space: -moz-pre-wrap; white-space: -pre-wrap; white-space: -o-pre-wrap; }
+.content p { text-align: justify; padding: 0; margin: 6pt 0; }
+.content h1, .content h2, .content h3, .content h4, .content h5 
+  { color: #333; padding: 0 6pt; margin: 12pt -24pt; border-bottom: 2px solid #666; font-weight: bold; }
+.content h1 { font-size: 20pt; }
+.content h2 { font-size: 16pt; }
+.content h3 { font-size: 12pt; }
+.content h4 { font-size: 12pt; font-weight: normal; }
+.content h5 { font-size: 12pt; font-weight: normal; font-style: italic; }
+.content hr { color: #333; margin: 12pt -24pt; height: 2px; border: none; background: #333; }
+.content a { text-decoration: none; border-bottom: 1px solid #666; color: #3465a4; }
+.content a.outside { font-weight: normal; font-style: italic; } 
+.content a.edit { font-weight: bold; color: #b30; }
+.content a:visited { border-bottom-style: dashed; }
+.content a:hover { background-color: #eee; color: #000; }
+.content ul, .content ol { margin: 6pt 0; padding: 0; }
+.content ul, .content ul li { list-style: square outside; }
+.content ol, .content ol li { list-style: decimal inside; }
+.content li { margin-left: 1.5em; }
+.content table { margin: 6pt -6pt; border: 1px solid #666; border-collapse: collapse; empty-cells: show; }
+.content th, .content td { border: 1px solid #666; padding: 2pt; }
+.content th { text-align: center; font-weight: bold; }
+.content dl { margin: 6pt 0; padding :0; }
+.content dl dt {
+    font-weight: bold;
+    margin-bottom: 6pt;
+    border-bottom: 1px solid #666;
+}
+.content dl dd { padding: 0; margin: 0; margin-left: 1.5em; }
+.content dl.quote dd { color: #666; }
+.content dl.quote dt { display: none; }
+
+.content .variable { color: #666; }
+.content .variable .definition { padding: 0; background: transparent; }

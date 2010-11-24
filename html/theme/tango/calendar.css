@@ -1,0 +1,28 @@
+div.month {
+    width: 13em;
+/*    float: right;*/
+    clear: left;
+    margin: 0.25em 0.5em;
+}
+
+div.month pre {
+    background: #fff url(cal.png) repeat-x top left;
+    margin: 0;
+    padding: 0;
+    padding-top: 24px;
+    border: 1px solid #eee;
+}
+    
+
+.cal.content div.month {
+    float: left;
+    margin: 0.25em;
+}
+
+div.month a {
+    font-size: 100% !important;
+    background-image: none !important;
+    padding: 0 !important;
+    font-weight: normal !important;
+    border: none !important;
+}

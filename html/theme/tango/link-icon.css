@@ -1,0 +1,47 @@
+/*  links */
+.content a.alias,
+.content a.definition,
+.content a.inter,
+a.author,
+a.diff,
+a.history,
+a.rollback,
+a.revision,
+.rc span.new,
+.content a.edit,
+.content a.outside,
+.content a.url,
+.content a.book,
+.content a.near,
+.content a.tag,
+.content a.upload,
+.content a.mailto { 
+    background-position: 0 50%; background-repeat: no-repeat; padding-left: 18px; }
+
+.content a.outside { background-image: url(internet-web-browser.png) }
+.content a.url { background-image: url(internet-web-browser.png) }
+.content a.book { background-image: url(accessories-dictionary.png) }
+.content a.near { background-image: url(go-jump.png) }
+.content a.tag { background-image: url(weather-overcast.png) }
+.content a.upload { background-image: url(mail-attachment.png) }
+.content a.inter { background-image: url(weather-clear-night.png) }
+.content a.alias { background-image: url(emblem-symbolic-link.png) }
+.content a.definition { background-image: url(edit-find.png) }
+.content a.inter span.site { color: #666; }
+.content a.mailto { background-image: url(internet-mail.png) }
+a.author { background-image: url(system-users-small.png) }
+a.diff { background-image: url(logviewer.png) }
+a.history { background-image: url(x-office-calendar.png) }
+.rc span.new { background-image: url(draw-star.png) }
+.content a.edit { background-image: url(accessories-text-editor-small.png) }
+a.rollback { background-image: url(edit-undo.png) }
+a.revision { background-image: url(edit-copy.png) }
+
+.content a.image { padding: 0; background-image: none; border: none; }
+
+/* InterWiki links */
+
+.content a.inter.Meatball { background-image: url(Meatball.png) }
+.content a.inter.Community { background-image: url(Community.png) }
+.content a.inter.Oddmuse { background-image: url(Oddmuse.png) }
+.content a.inter.Self { background-image: url(go-home-small.png) }

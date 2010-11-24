@@ -1,0 +1,12 @@
+.content.edit form textarea#text {
+    margin-right: 12em;
+    margin-left: 0;
+    width: auto;
+}
+.content.edit form textarea#summary {
+    width: 12em;
+    position: absolute;
+    top: 0;
+    right: 0.5em;
+    height: 31em;
+}

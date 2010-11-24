@@ -1,0 +1,45 @@
+=Debian Reference=
+Osamu Aoki
+
+Copyright © 2007-2009 Osamu Aoki
+
+This Debian Reference (v2) (2010-04-15 15:47:51 UTC) is intended to provide a broad overview of the Debian system as a post-installation user's guide. It covers many aspects of system administration through shell-command examples for non-developers.
+
+==Abstract==
+
+This book is free; you may redistribute it and/or modify it under the terms of the GNU General Public License of any version compliant to the Debian Free Software Guidelines (DFSG).
+------------------------------------------------------------------
+
+**Start reading at 2010.05.16 , xiaoranzzz**
+
+* 1.1. Console basics
+* 1.1.6 Virtual consoles
+** chvt
+*** chang virtual console from commandline
+* 1.1.10 Additional package suggestings for the newbie
+** w3m
+*** Tect-mode WWW browsers
+** rutebook
+*** Linux: Rute User's Tutorial and Exposition 
+* 1.2.4 Filesystem permissions
+** The numeric mode for file permissions in chmod(1) commands
+*** 1st optional digit: sum of **set user ID** (=4), **set group ID** (=2), and **sticky bit** (=1) 
+* 1.2.6 Timestamps
+** Table 1.9. List of types of timestamps
+*** mtime
+**** the file modification time (ls -l)|
+*** ctime
+**** the file status change time (ls -lc)|
+*** atime
+**** the last file access time (ls -lu) |
+---------<META>---------
+ip: 192.168.1.25
+ts: 1274006648
+minor: 
+host: myplace.hell
+username: xiaoranzzz
+revision: 14
+summary: Debian Reference Osamu Aoki Copyright © 2007-2009 Osamu Aoki This Debian Reference (v2) (2010-04-15 15:47:51 UTC) is intended to provide a . . .
+languages: 
+lastmajor: 14
+keep-ts: 1274006753

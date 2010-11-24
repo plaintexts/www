@@ -1,0 +1,29 @@
+Booting
+-------
+
+* grub4dos
+
+* [[.syslinux|syslinux]]
+
+* bootsect
+
+    For repairing Vista and Xp bootsector as well as MBR.
+    This program is from microsoft, can be located under directory /boot in    windows vista installation  CD.
+
+System Tweaking
+---------------
+
+* Piriform Defraggler
+
+    Lite, free, easy to use.
+
+* Piriform CCleaner
+
+    Lite, free, easy to use for cleaning up the system.
+
+version information
+------- -----------
+Revision 5, Last updated Sat Oct 30 23:06:16 2010, by xiaoranzzz@myplace.hell
+ts: 1288451176
+lastmajor: 5
+keep-ts: 1288451340

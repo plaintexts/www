@@ -1,0 +1,1097 @@
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 1 
+WriteStringToFile:p:/workspace/wiki/blog/pageidx 1 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = Main	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=Main
+GetId: PATH=, KEYWORD=, PATH=, ID=Main 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=Main
+GetId: PATH=, KEYWORD=, PATH=, ID=Main 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=Main
+GetId: PATH=, KEYWORD=, PATH=, ID=Main 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/cgi-bin/blog.pl, REQUEST_URI=/cgi-bin/blog.pl
+GetId: PATH=, KEYWORD=, PATH=, ID=Main 
+GetPageDirectory: ID = Main	===>
+CreateDir:p:/workspace/wiki/blog/temp 
+GetPageDirectory: ID = Main	===>
+CreateDir:p:/workspace/wiki/blog/page 
+GetPageDirectory: ID = Main	===>
+GetPageDirectory: ID = Main	===>
+WriteStringToFile:p:/workspace/wiki/blog/page/Main.txt 1 
+WriteStringToFile:p:/workspace/wiki/blog/pageidx 1 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+CreateDir:p:/workspace/wiki/blog/temp 
+CreateDir:p:/workspace/wiki/blog/page 
+GetPageDirectory: ID = Main	===>
+GetPageDirectory: ID = Main	===>
+WriteStringToFile:p:/workspace/wiki/blog/page/Main.txt 1 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = Main	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=new
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=new
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=new
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/cgi-bin/blog.pl, REQUEST_URI=/cgi-bin/blog.pl?id=2009-08-22&action=edit&Go!=Go!
+GetId: PATH=, KEYWORD=, PATH=, ID=2009-08-22 
+GetPageDirectory: ID = 2009-08-22	===>
+SCRIPT_NAME=/cgi-bin/blog.pl, REQUEST_URI=/cgi-bin/blog.pl?id=2009-08-22&action=edit&Go!=Go!
+GetId: PATH=, KEYWORD=, PATH=, ID=2009-08-22 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/cgi-bin/blog.pl, REQUEST_URI=/cgi-bin/blog.pl?id=2009-08-22&action=edit&Go!=Go!
+GetId: PATH=, KEYWORD=, PATH=, ID=2009-08-22 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Categories
+GetId: PATH=/Categories, KEYWORD=, PATH=/Categories, ID=Categories 
+GetPageDirectory: ID = Categories	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Categories
+GetId: PATH=/Categories, KEYWORD=, PATH=/Categories, ID=Categories 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Categories
+GetId: PATH=/Categories, KEYWORD=, PATH=/Categories, ID=Categories 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Categories
+GetId: PATH=/Categories, KEYWORD=, PATH=/Categories, ID=Categories 
+GetPageDirectory: ID = Categories	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=Categories
+GetId: PATH=, KEYWORD=, PATH=, ID=Categories 
+GetPageDirectory: ID = Categories	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=Categories
+GetId: PATH=, KEYWORD=, PATH=, ID=Categories 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=Categories
+GetId: PATH=, KEYWORD=, PATH=, ID=Categories 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/cgi-bin/blog.pl, REQUEST_URI=/cgi-bin/blog.pl
+GetId: PATH=, KEYWORD=, PATH=, ID=Categories 
+GetPageDirectory: ID = Categories	===>
+CreateDir:p:/workspace/wiki/blog/temp 
+GetPageDirectory: ID = Categories	===>
+CreateDir:p:/workspace/wiki/blog/page 
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = Categories	===>
+WriteStringToFile:p:/workspace/wiki/blog/page/Categories.txt 1 
+WriteStringToFile:p:/workspace/wiki/blog/pageidx 1 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Categories
+GetId: PATH=/Categories, KEYWORD=, PATH=/Categories, ID=Categories 
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = Categories	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Categories
+GetId: PATH=/Categories, KEYWORD=, PATH=/Categories, ID=Categories 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Categories
+GetId: PATH=/Categories, KEYWORD=, PATH=/Categories, ID=Categories 
+GetPageDirectory: ID = 已标点	===>
+CreateDir:p:/workspace/wiki/blog/temp 
+CreateDir:p:/workspace/wiki/blog/page 
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = Categories	===>
+WriteStringToFile:p:/workspace/wiki/blog/page/Categories.txt 1 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Categories
+GetId: PATH=/Categories, KEYWORD=, PATH=/Categories, ID=Categories 
+GetPageDirectory: ID = Categories	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=new
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=new
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=new
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=2009-08-22_已标点
+GetId: PATH=, KEYWORD=, PATH=, ID=2009-08-22_已标点 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+GetPageDirectory: ID = Categories	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=2009-08-22_已标点
+GetId: PATH=, KEYWORD=, PATH=, ID=2009-08-22_已标点 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=2009-08-22_已标点
+GetId: PATH=, KEYWORD=, PATH=, ID=2009-08-22_已标点 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/cgi-bin/blog.pl, REQUEST_URI=/cgi-bin/blog.pl
+GetId: PATH=, KEYWORD=, PATH=, ID=2009-08-22_已标点 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+CreateDir:p:/workspace/wiki/blog/temp 
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+CreateDir:p:/workspace/wiki/blog/page 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+WriteStringToFile:p:/workspace/wiki/blog/page/2009-08-22_�ѱ��.txt 1 
+WriteStringToFile:p:/workspace/wiki/blog/pageidx 1 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-22_已标点
+GetId: PATH=/2009-08-22_已标点, KEYWORD=, PATH=/2009-08-22_?��2?????1, ID=2009-08-22_已标点 
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-22_已标点
+GetId: PATH=/2009-08-22_已标点, KEYWORD=, PATH=/2009-08-22_?��2?????1, ID=2009-08-22_已标点 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-22_已标点
+GetId: PATH=/2009-08-22_已标点, KEYWORD=, PATH=/2009-08-22_?��2?????1, ID=2009-08-22_已标点 
+GetPageDirectory: ID = 晚安	===>
+GetPageDirectory: ID = 世界	===>
+CreateDir:p:/workspace/wiki/blog/temp 
+CreateDir:p:/workspace/wiki/blog/page 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+WriteStringToFile:p:/workspace/wiki/blog/page/2009-08-22_�ѱ��.txt 1 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-22_已标点
+GetId: PATH=/2009-08-22_已标点, KEYWORD=, PATH=/2009-08-22_?��2?????1, ID=2009-08-22_已标点 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=calendar
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=calendar
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=calendar
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+GetPageDirectory: ID = Categories	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-22_已标点
+GetId: PATH=/2009-08-22_已标点, KEYWORD=, PATH=/2009-08-22_?��2?????1, ID=2009-08-22_已标点 
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-22_已标点
+GetId: PATH=/2009-08-22_已标点, KEYWORD=, PATH=/2009-08-22_?��2?????1, ID=2009-08-22_已标点 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-22_已标点
+GetId: PATH=/2009-08-22_已标点, KEYWORD=, PATH=/2009-08-22_?��2?????1, ID=2009-08-22_已标点 
+GetPageDirectory: ID = 晚安	===>
+GetPageDirectory: ID = 世界	===>
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-22_已标点
+GetId: PATH=/2009-08-22_已标点, KEYWORD=, PATH=/2009-08-22_?��2?????1, ID=2009-08-22_已标点 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+GetPageDirectory: ID = 晚安	===>
+GetPageDirectory: ID = 世界	===>
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = Main	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=admin;id=Main
+GetId: PATH=, KEYWORD=, PATH=, ID=Main 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=admin;id=Main
+GetId: PATH=, KEYWORD=, PATH=, ID=Main 
+GetPageDirectory: ID = BannedContent	===>
+GetPageDirectory: ID = BannedHosts	===>
+GetPageDirectory: ID = InterMap	===>
+GetPageDirectory: ID = RssExclude	===>
+GetPageDirectory: ID = RssInterwikiTranslate	===>
+GetPageDirectory: ID = css	===>
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=admin;id=Main
+GetId: PATH=, KEYWORD=, PATH=, ID=Main 
+GetPageDirectory: ID = Categories	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=version
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=version
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=version
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+GetPageDirectory: ID = Categories	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=晚安
+GetId: PATH=, KEYWORD=, PATH=, ID=晚安 
+GetPageDirectory: ID = 晚安	===>
+GetPageDirectory: ID = Categories	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=晚安
+GetId: PATH=, KEYWORD=, PATH=, ID=晚安 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=晚安
+GetId: PATH=, KEYWORD=, PATH=, ID=晚安 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/cgi-bin/blog.pl, REQUEST_URI=/cgi-bin/blog.pl
+GetId: PATH=, KEYWORD=, PATH=, ID=晚安 
+GetPageDirectory: ID = 晚安	===>
+CreateDir:p:/workspace/wiki/blog/temp 
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = 晚安	===>
+CreateDir:p:/workspace/wiki/blog/page 
+GetPageDirectory: ID = 晚安	===>
+GetPageDirectory: ID = 晚安	===>
+WriteStringToFile:p:/workspace/wiki/blog/page/����.txt 1 
+WriteStringToFile:p:/workspace/wiki/blog/pageidx 1 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/晚安
+GetId: PATH=/晚安, KEYWORD=, PATH=/??????, ID=晚安 
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = 晚安	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/晚安
+GetId: PATH=/晚安, KEYWORD=, PATH=/??????, ID=晚安 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/晚安
+GetId: PATH=/晚安, KEYWORD=, PATH=/??????, ID=晚安 
+CreateDir:p:/workspace/wiki/blog/temp 
+CreateDir:p:/workspace/wiki/blog/page 
+GetPageDirectory: ID = 晚安	===>
+GetPageDirectory: ID = 晚安	===>
+WriteStringToFile:p:/workspace/wiki/blog/page/����.txt 1 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/晚安
+GetId: PATH=/晚安, KEYWORD=, PATH=/??????, ID=晚安 
+GetPageDirectory: ID = 晚安	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+GetPageDirectory: ID = 世界	===>
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = Main	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=admin;id=Main
+GetId: PATH=, KEYWORD=, PATH=, ID=Main 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=admin;id=Main
+GetId: PATH=, KEYWORD=, PATH=, ID=Main 
+GetPageDirectory: ID = BannedContent	===>
+GetPageDirectory: ID = BannedHosts	===>
+GetPageDirectory: ID = InterMap	===>
+GetPageDirectory: ID = RssExclude	===>
+GetPageDirectory: ID = RssInterwikiTranslate	===>
+GetPageDirectory: ID = css	===>
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=admin;id=Main
+GetId: PATH=, KEYWORD=, PATH=, ID=Main 
+GetPageDirectory: ID = Categories	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=password
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=password
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=password
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+GetPageDirectory: ID = Categories	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=new
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=new
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=new
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/cgi-bin/blog.pl, REQUEST_URI=/cgi-bin/blog.pl?id=2009-08-22&action=edit&Go!=Go!
+GetId: PATH=, KEYWORD=, PATH=, ID=2009-08-22 
+GetPageDirectory: ID = 2009-08-22	===>
+SCRIPT_NAME=/cgi-bin/blog.pl, REQUEST_URI=/cgi-bin/blog.pl?id=2009-08-22&action=edit&Go!=Go!
+GetId: PATH=, KEYWORD=, PATH=, ID=2009-08-22 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/cgi-bin/blog.pl, REQUEST_URI=/cgi-bin/blog.pl
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+SCRIPT_NAME=/cgi-bin/blog.pl, REQUEST_URI=/cgi-bin/blog.pl
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/cgi-bin/blog.pl, REQUEST_URI=/cgi-bin/blog.pl
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+GetPageDirectory: ID = Categories	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+GetPageDirectory: ID = 世界	===>
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = Main	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=admin;id=Main
+GetId: PATH=, KEYWORD=, PATH=, ID=Main 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=admin;id=Main
+GetId: PATH=, KEYWORD=, PATH=, ID=Main 
+GetPageDirectory: ID = BannedContent	===>
+GetPageDirectory: ID = BannedHosts	===>
+GetPageDirectory: ID = InterMap	===>
+GetPageDirectory: ID = RssExclude	===>
+GetPageDirectory: ID = RssInterwikiTranslate	===>
+GetPageDirectory: ID = css	===>
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=admin;id=Main
+GetId: PATH=, KEYWORD=, PATH=, ID=Main 
+GetPageDirectory: ID = Categories	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-22_已标点
+GetId: PATH=/2009-08-22_已标点, KEYWORD=, PATH=/2009-08-22_?��2?????1, ID=2009-08-22_已标点 
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-22_已标点
+GetId: PATH=/2009-08-22_已标点, KEYWORD=, PATH=/2009-08-22_?��2?????1, ID=2009-08-22_已标点 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-22_已标点
+GetId: PATH=/2009-08-22_已标点, KEYWORD=, PATH=/2009-08-22_?��2?????1, ID=2009-08-22_已标点 
+GetPageDirectory: ID = 世界	===>
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-22_已标点
+GetId: PATH=/2009-08-22_已标点, KEYWORD=, PATH=/2009-08-22_?��2?????1, ID=2009-08-22_已标点 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=2009-08-22_已标点
+GetId: PATH=, KEYWORD=, PATH=, ID=2009-08-22_已标点 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=2009-08-22_已标点
+GetId: PATH=, KEYWORD=, PATH=, ID=2009-08-22_已标点 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=2009-08-22_已标点
+GetId: PATH=, KEYWORD=, PATH=, ID=2009-08-22_已标点 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/cgi-bin/blog.pl, REQUEST_URI=/cgi-bin/blog.pl
+GetId: PATH=, KEYWORD=, PATH=, ID=2009-08-22_已标点 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+CreateDir:p:/workspace/wiki/blog/temp 
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+CreateDir:p:/workspace/wiki/blog/keep 1 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+CreateDir:p:/workspace/wiki/blog/keep/2009-08-22_�ѱ�� 1 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+WriteStringToFile:p:/workspace/wiki/blog/keep/2009-08-22_�ѱ��/1.kp 1 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+CreateDir:p:/workspace/wiki/blog/temp 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/temp/old 1 
+WriteStringToFile:p:/workspace/wiki/blog/temp/new 1 
+CreateDir:p:/workspace/wiki/blog/page 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+WriteStringToFile:p:/workspace/wiki/blog/page/2009-08-22_�ѱ��.txt 1 
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-22_已标点
+GetId: PATH=/2009-08-22_已标点, KEYWORD=, PATH=/2009-08-22_?��2?????1, ID=2009-08-22_已标点 
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-22_已标点
+GetId: PATH=/2009-08-22_已标点, KEYWORD=, PATH=/2009-08-22_?��2?????1, ID=2009-08-22_已标点 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-22_已标点
+GetId: PATH=/2009-08-22_已标点, KEYWORD=, PATH=/2009-08-22_?��2?????1, ID=2009-08-22_已标点 
+GetPageDirectory: ID = 世界	===>
+CreateDir:p:/workspace/wiki/blog/temp 
+CreateDir:p:/workspace/wiki/blog/page 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+WriteStringToFile:p:/workspace/wiki/blog/page/2009-08-22_�ѱ��.txt 1 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-22_已标点
+GetId: PATH=/2009-08-22_已标点, KEYWORD=, PATH=/2009-08-22_?��2?????1, ID=2009-08-22_已标点 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/已标点
+GetId: PATH=/已标点, KEYWORD=, PATH=/?��2?????1, ID=已标点 
+GetPageDirectory: ID = 已标点	===>
+GetPageDirectory: ID = Categories	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/已标点
+GetId: PATH=/已标点, KEYWORD=, PATH=/?��2?????1, ID=已标点 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/已标点
+GetId: PATH=/已标点, KEYWORD=, PATH=/?��2?????1, ID=已标点 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/已标点
+GetId: PATH=/已标点, KEYWORD=, PATH=/?��2?????1, ID=已标点 
+GetPageDirectory: ID = 已标点	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/已标点
+GetId: PATH=/已标点, KEYWORD=, PATH=/?��2?????1, ID=已标点 
+GetPageDirectory: ID = 已标点	===>
+GetPageDirectory: ID = Categories	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/已标点
+GetId: PATH=/已标点, KEYWORD=, PATH=/?��2?????1, ID=已标点 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/已标点
+GetId: PATH=/已标点, KEYWORD=, PATH=/?��2?????1, ID=已标点 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/已标点
+GetId: PATH=/已标点, KEYWORD=, PATH=/?��2?????1, ID=已标点 
+GetPageDirectory: ID = 已标点	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+GetPageDirectory: ID = 世界	===>
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = Main	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+GetPageDirectory: ID = 世界	===>
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main
+GetId: PATH=/Main, KEYWORD=, PATH=/Main, ID=Main 
+GetPageDirectory: ID = Main	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+GetPageDirectory: ID = 世界	===>
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+GetPageDirectory: ID = Main	===>
+CreateDir:p:/workspace/wiki/blog 
+CreateDir:p:/workspace/wiki/blog/temp 
+WriteStringToFile:p:/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=rss
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+CreateDir:/myplace/wdata/workspace/wiki/blog 
+CreateDir:/myplace/wdata/workspace/wiki/blog/temp 
+WriteStringToFile:/myplace/wdata/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+GetPageDirectory: ID = HomePage	===>
+GetPageDirectory: ID = Categories	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+GetPageDirectory: ID = HomePage	===>
+CreateDir:/myplace/wdata/workspace/wiki/blog 
+CreateDir:/myplace/wdata/workspace/wiki/blog/temp 
+WriteStringToFile:/myplace/wdata/workspace/wiki/blog/visitors.log 1 
+CreateDir:/myplace/wdata/workspace/wiki/blog 
+CreateDir:/myplace/wdata/workspace/wiki/blog/temp 
+WriteStringToFile:/myplace/wdata/workspace/wiki/blog/visitors.log 1 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+GetPageDirectory: ID = Categories	===>
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+SCRIPT_NAME=/blog, REQUEST_URI=/blog
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+GetPageDirectory: ID = 世界	===>
+GetPageDirectory: ID = 世界	===>
+CreateDir:/myplace/wdata/workspace/wiki/blog/temp 
+CreateDir:/myplace/wdata/workspace/wiki/blog/page 
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+GetPageDirectory: ID = 2009-08-22_已标点	===>
+WriteStringToFile:/myplace/wdata/workspace/wiki/blog/page/2009-08-22_已标点.txt 1 
+CreateDir:/myplace/wdata/workspace/wiki/blog/temp 
+CreateDir:/myplace/wdata/workspace/wiki/blog/page 
+GetPageDirectory: ID = Main	===>
+GetPageDirectory: ID = Main	===>
+WriteStringToFile:/myplace/wdata/workspace/wiki/blog/page/Main.txt 1 
+GetPageDirectory: ID = Main	===>
+SCRIPT_NAME=/blog, REQUEST_URI=/blog
+GetId: PATH=, KEYWORD=, PATH=, ID= 
+GetPageDirectory: ID = Main	===>
+CreateDir p:/workspace/wiki/blog
+Read p:/workspace/wiki/blog/pageidx
+Read p:/workspace/wiki/blog/visitors.log
+CreateDir p:/workspace/wiki/blog/temp
+Write p:/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+CleanPath: [Categories] ===> [Categories]
+Read p:/workspace/wiki/blog/page/Categories.txt
+CleanPath: [Main] ===> [Main]
+Read p:/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+CleanPath: [2009-08-24_已标点] ===> [2009-08-24_已标点]
+Read p:/workspace/wiki/blog/page/2009-08-24_�ѱ��.txt
+CleanPath: [Main] ===> [Main]
+Read p:/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+CleanPath: [Main] ===> [Main]
+CreateDir p:/workspace/wiki/blog
+Read p:/workspace/wiki/blog/pageidx
+Read p:/workspace/wiki/blog/visitors.log
+CreateDir p:/workspace/wiki/blog/temp
+Write p:/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+CleanPath: [Categories] ===> [Categories]
+Read p:/workspace/wiki/blog/page/Categories.txt
+CleanPath: [Main] ===> [Main]
+Read p:/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+CleanPath: [2009-08-24_已标点] ===> [2009-08-24_已标点]
+Read p:/workspace/wiki/blog/page/2009-08-24_�ѱ��.txt
+CleanPath: [Main] ===> [Main]
+Read p:/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+CleanPath: [Main] ===> [Main]
+CreateDir p:/workspace/wiki/blog
+Read p:/workspace/wiki/blog/pageidx
+Read p:/workspace/wiki/blog/visitors.log
+CreateDir p:/workspace/wiki/blog/temp
+Write p:/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+CleanPath: [2009-08-24_已标点] ===> [2009-08-24_已标点]
+Read /myplace/workspace/wiki/blog/page/2009-08-24_已标点.txt
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-24_已标点 , ID=2009-08-24_已标点
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+CleanPath: [2009-08-24_已标点] ===> [2009-08-24_已标点]
+Read /myplace/workspace/wiki/blog/page/2009-08-24_已标点.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-24_已标点 , ID=2009-08-24_已标点
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-24_已标点 , ID=2009-08-24_已标点
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-24_已标点 , ID=2009-08-24_已标点
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+CleanPath: [2009-08-24_已标点] ===> [2009-08-24_已标点]
+Read /myplace/workspace/wiki/blog/page/2009-08-24_已标点.txt
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+CleanPath: [Main] ===> [Main]
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=admin;id=Main , ID=Main
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=admin;id=Main , ID=Main
+CleanPath: [BannedContent] ===> [BannedContent]
+CleanPath: [BannedHosts] ===> [BannedHosts]
+CleanPath: [InterMap] ===> [InterMap]
+CleanPath: [RssExclude] ===> [RssExclude]
+CleanPath: [RssInterwikiTranslate] ===> [RssInterwikiTranslate]
+CleanPath: [css] ===> [css]
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=admin;id=Main , ID=Main
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=version , ID=
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=version , ID=
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=version , ID=
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+CleanPath: [2009-08-24_已标点] ===> [2009-08-24_已标点]
+Read /myplace/workspace/wiki/blog/page/2009-08-24_已标点.txt
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+CleanPath: [Main] ===> [Main]
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=new , ID=
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=new , ID=
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=new , ID=
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Categories , ID=Categories
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Categories , ID=Categories
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Categories , ID=Categories
+CleanPath: [已标点] ===> [已标点]
+CleanPath: [未标点] ===> [未标点]
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Categories , ID=Categories
+CleanPath: [Categories] ===> [Categories]
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?id=2010-05-17&action=edit&Go!=Go! , ID=2010-05-17
+CleanPath: [2010-05-17] ===> [2010-05-17]
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?id=2010-05-17&action=edit&Go!=Go! , ID=2010-05-17
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?id=2010-05-17&action=edit&Go!=Go! , ID=2010-05-17
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=2010-05-17
+CleanPath: [2010-05-17] ===> [2010-05-17]
+CreateDir /myplace/workspace/wiki/blog/temp
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+CleanPath: [2010-05-17] ===> [2010-05-17]
+GetKeepDir:/myplace/workspace/wiki/blog/keep/2010-05-17
+GetKeepFiles: 2010-05-17====>
+GetKeepFiles: 
+CreatePageDir:[/myplace/workspace/wiki/blog/page] :2010-05-17
+GetPageDirectory:2010-05-17==>
+ExMakeDir /myplace
+CreateDir /myplace
+ExMakeDir /myplace/workspace
+CreateDir /myplace/workspace
+ExMakeDir /myplace/workspace/wiki
+CreateDir /myplace/workspace/wiki
+ExMakeDir /myplace/workspace/wiki/blog
+CreateDir /myplace/workspace/wiki/blog
+ExMakeDir /myplace/workspace/wiki/blog/page
+CreateDir /myplace/workspace/wiki/blog/page
+CleanPath: [2010-05-17] ===> [2010-05-17]
+Write /myplace/workspace/wiki/blog/page/2010-05-17.txt
+Append to /myplace/workspace/wiki/blog/rc.log
+Write /myplace/workspace/wiki/blog/pageidx
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2010-05-17 , ID=2010-05-17
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+CleanPath: [2010-05-17] ===> [2010-05-17]
+Read /myplace/workspace/wiki/blog/page/2010-05-17.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2010-05-17 , ID=2010-05-17
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2010-05-17 , ID=2010-05-17
+CreateDir /myplace/workspace/wiki/blog/temp
+CreatePageDir:[/myplace/workspace/wiki/blog/page] :2010-05-17
+GetPageDirectory:2010-05-17==>
+ExMakeDir /myplace
+CreateDir /myplace
+ExMakeDir /myplace/workspace
+CreateDir /myplace/workspace
+ExMakeDir /myplace/workspace/wiki
+CreateDir /myplace/workspace/wiki
+ExMakeDir /myplace/workspace/wiki/blog
+CreateDir /myplace/workspace/wiki/blog
+ExMakeDir /myplace/workspace/wiki/blog/page
+CreateDir /myplace/workspace/wiki/blog/page
+CleanPath: [2010-05-17] ===> [2010-05-17]
+Write /myplace/workspace/wiki/blog/page/2010-05-17.txt
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2010-05-17 , ID=2010-05-17
+CleanPath: [2010-05-17] ===> [2010-05-17]
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main , ID=Main
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main , ID=Main
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main , ID=Main
+CleanPath: [2010-05-17] ===> [2010-05-17]
+Read /myplace/workspace/wiki/blog/page/2010-05-17.txt
+CleanPath: [2009-08-24_已标点] ===> [2009-08-24_已标点]
+Read /myplace/workspace/wiki/blog/page/2009-08-24_已标点.txt
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main , ID=Main
+CleanPath: [Main] ===> [Main]
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=2010-05-17 , ID=2010-05-17
+CleanPath: [2010-05-17] ===> [2010-05-17]
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+CleanPath: [2010-05-17] ===> [2010-05-17]
+Read /myplace/workspace/wiki/blog/page/2010-05-17.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=2010-05-17 , ID=2010-05-17
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=2010-05-17 , ID=2010-05-17
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=2010-05-17
+CleanPath: [2010-05-17] ===> [2010-05-17]
+CreateDir /myplace/workspace/wiki/blog/temp
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+CleanPath: [2010-05-17] ===> [2010-05-17]
+Read /myplace/workspace/wiki/blog/page/2010-05-17.txt
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2010-05-17 , ID=2010-05-17
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+CleanPath: [2010-05-17] ===> [2010-05-17]
+Read /myplace/workspace/wiki/blog/page/2010-05-17.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2010-05-17 , ID=2010-05-17
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2010-05-17 , ID=2010-05-17
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2010-05-17 , ID=2010-05-17
+CleanPath: [2010-05-17] ===> [2010-05-17]
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main , ID=Main
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main , ID=Main
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main , ID=Main
+CleanPath: [2010-05-17] ===> [2010-05-17]
+Read /myplace/workspace/wiki/blog/page/2010-05-17.txt
+CleanPath: [2009-08-24_已标点] ===> [2009-08-24_已标点]
+Read /myplace/workspace/wiki/blog/page/2009-08-24_已标点.txt
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/Main , ID=Main
+CleanPath: [Main] ===> [Main]
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=new , ID=
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=new , ID=
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=new , ID=
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=2010-05-17_已标点 , ID=2010-05-17_已标点
+CleanPath: [2010-05-17_已标点] ===> [2010-05-17_已标点]
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=2010-05-17_已标点 , ID=2010-05-17_已标点
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=2010-05-17_已标点 , ID=2010-05-17_已标点
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=2010-05-17_未标点 , ID=2010-05-17_未标点
+CleanPath: [2010-05-17_未标点] ===> [2010-05-17_未标点]
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=2010-05-17_未标点 , ID=2010-05-17_未标点
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog?action=edit;id=2010-05-17_未标点 , ID=2010-05-17_未标点
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+CleanPath: [2010-05-17] ===> [2010-05-17]
+Read /myplace/workspace/wiki/blog/page/2010-05-17.txt
+CleanPath: [2009-08-24_已标点] ===> [2009-08-24_已标点]
+Read /myplace/workspace/wiki/blog/page/2009-08-24_已标点.txt
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog , ID=
+CleanPath: [Main] ===> [Main]
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2010-05-17 , ID=2010-05-17
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+CleanPath: [2010-05-17] ===> [2010-05-17]
+Read /myplace/workspace/wiki/blog/page/2010-05-17.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2010-05-17 , ID=2010-05-17
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2010-05-17 , ID=2010-05-17
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2010-05-17 , ID=2010-05-17
+CleanPath: [2010-05-17] ===> [2010-05-17]
+CreateDir /myplace/workspace/wiki/blog
+Read /myplace/workspace/wiki/blog/pageidx
+Read /myplace/workspace/wiki/blog/visitors.log
+CreateDir /myplace/workspace/wiki/blog/temp
+Write /myplace/workspace/wiki/blog/visitors.log
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-24_已标点 , ID=2009-08-24_已标点
+CleanPath: [Categories] ===> [Categories]
+Read /myplace/workspace/wiki/blog/page/Categories.txt
+CleanPath: [2009-08-24_已标点] ===> [2009-08-24_已标点]
+Read /myplace/workspace/wiki/blog/page/2009-08-24_已标点.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-24_已标点 , ID=2009-08-24_已标点
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-24_已标点 , ID=2009-08-24_已标点
+CleanPath: [Main] ===> [Main]
+Read /myplace/workspace/wiki/blog/page/Main.txt
+SCRIPT_NAME=/blog, REQUEST_URI=/blog/2009-08-24_已标点 , ID=2009-08-24_已标点
+CleanPath: [2009-08-24_已标点] ===> [2009-08-24_已标点]
+CleanPath: [Categories] ===> [Categories]
+GetPageFile:Categories====>/myplace/workspace/www/blog/page/Categories.txt
+CleanPath: [Main] ===> [Main]
+GetPageFile:Main====>/myplace/workspace/www/blog/page/Main.txt
+CleanPath: [Main] ===> [Main]
+GetPageFile:Main====>/myplace/workspace/www/blog/page/Main.txt
+CleanPath: [Main] ===> [Main]
+CleanPath: [Categories] ===> [Categories]
+GetPageFile:Categories====>/myplace/workspace/www/blog/page/Categories.txt
+CleanPath: [Main] ===> [Main]
+GetPageFile:Main====>/myplace/workspace/www/blog/page/Main.txt
+CleanPath: [Main] ===> [Main]
+GetPageFile:Main====>/myplace/workspace/www/blog/page/Main.txt
+CleanPath: [Main] ===> [Main]
+CleanPath: [Categories] ===> [Categories]
+GetPageFile:Categories====>/myplace/workspace/www/blog/page/Categories.txt
+CleanPath: [Main] ===> [Main]
+GetPageFile:Main====>/myplace/workspace/www/blog/page/Main.txt
+CleanPath: [Main] ===> [Main]
+GetPageFile:Main====>/myplace/workspace/www/blog/page/Main.txt
+CleanPath: [Main] ===> [Main]

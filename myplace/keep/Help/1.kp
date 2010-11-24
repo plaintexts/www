@@ -1,0 +1,45 @@
+= Help =
+
+== Text Formating ==
+
+This wiki mainly use the Creole wiki markup syntax, with some rules borrow from [[http://zim-wiki.org/manual/Start.html|Zim]].
+
+=== Creole Markup Syntax ===
+
+Creole is a common wiki markup language to be used across different wikis. It's not replacing existing markup but instead enabling wiki users to transfer content seamlessly across wikis, and for novice users to contribute more easily. 
+
+[[.Creole|Creole]] cheat sheat:
+
+http://www.wikicreole.org/attach/CheatSheet/creole_cheat_sheet.png
+
+
+=== Other Syntax ===
+* Directory style page name markup
+{{{
+[[:Creole]] Full qualified path name (page name), will refer to Creole
+[[.Creole]] Sub directory path name, will refer to Help:Creole
+[[Creole]] Relative path name, since current directory is ":" (root), will refer to Creole
+}}}
+* Enable access to local files under $ZimRootUrl
+{{{
+{{:index.html}}      : Full qualified path name (page name), will refer to $ZimRootUrl/index.html
+{{.index.html}}      : Sub directory path name, will refer to $ZimRootUrl/Help/index.html
+{{index.html}}       : Relative path name, since current directory is ":" (root),will refer to $ZimRootUrl/index.html
+[local:index.html]   : Same as {{index.html}}
+}}}
+* Enable pattern wised local files access
+{{{
+[localexp:cover,1,100,4,.jpg]  Expand to $ZimRootUrl/Help/cover0001.jpg ... $ZimRootUrl/Help/cover01000.jpg (100 items)
+[localexp:*.*,-d/-f,\.jpg,thumb] Expand to All files under $ZimRootUrl/Help which match /\.jpg/ but not match /thumb/
+}}}
+
+== Reference ==
+[http://www.wikicreole.org/] Creole Wiki Markup Language
+[WikiPedia:Creole] Wikipedia:Creole 
+
+version information
+------- -----------
+Revision 1, Last updated Fri May 21 01:04:10 2010, by xiaoranzzz@myplace.hell
+ts: 1274375050
+lastmajor: 6
+keep-ts: 1275067934

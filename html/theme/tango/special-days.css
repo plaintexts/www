@@ -1,0 +1,12 @@
+.specialdays {
+    display: block;
+    float: right;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: #f5f5f5;
+    border: 1px solid #999;
+    padding: 2px;
+    padding-left: 28px;
+    background: url(office-calendar.png) no-repeat 2px 50% #f5f5f5;
+}

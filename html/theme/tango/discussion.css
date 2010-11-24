@@ -1,0 +1,6 @@
+div.portrait p { margin: 0; }
+.portrait a { border: none; }
+.portrait a:visited { border: none; }
+.portrait br { display: none; }
+.portrait img { vertical-align: top; border: 1px solid #666; background: #fff; padding: 4px; width:48px; height:48px; }
+div.portrait { background: #f5f5f5 98% 98% url(comment-big.png) no-repeat; border: 1px dashed #999; padding: 3pt 6pt; margin: 6pt -6pt; }

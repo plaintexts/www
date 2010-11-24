@@ -1,0 +1,9 @@
+/* floats */
+.right {float:right; clear: right;}
+.left {float:left; clear: left;}
+.center { display: block; margin: 6pt auto; text-align: center;}
+a.image.right img, 
+a.image.center img, 
+a.image.left img { margin:0.5em; display:block; }
+hr { clear: left; }
+

@@ -1,0 +1,86 @@
+<<<<<<< you
+hello world
+
+hello world again
+
+hello world again and again
+||||||| ancestor
+DeletedPage=======
+flags: 0101010101010101010101010101010101010101010101010101010101010101010101010
+blocks: <div class="toc"><h2>Contents</h2><ol><li><a href="#Heading1">VB Shell </a><ol><li><a href="#Heading2">Debian firefox </a></li><li><a href="#Heading3">BigFish? - Drawn the Painted Tower </a></li><li><a href="#Heading4">History </a></li></ol></li></ol></div><p><h2 id="Heading1">VB Shell </h2></p><hr /><p>&lt;pre&gt;<br />dim Args,prog,progargs<br />set Args = WScript.Arguments</p><p>if(Args.count&gt;0) then<br /> prog = Args.item(0)<br /> dim q<br /> q = chr(34)<br /> prog = q &amp; prog &amp; q<br /> dim i<br /> for i = 1 to Args.count -1<br /> progargs = progargs &amp; " " &amp; q &amp; Args.item(i) &amp; q<br /> next<br />end if</p><p>dim UserArgs<br />UserArgs = InputBox(_<br /> "About to run :" &amp; vbcrlf &amp; prog &amp; vbcrlf &amp; _<br /> "Give it some arguments?" &amp; vbcrlf,"LoadProg" _<br /> )</p><p>if UserArgs &lt;&gt; "" then<br /> progargs = UserArgs<br />end if</p><p>Dim wsh<br />Set wsh = WScript.CreateObject("WScript.Shell")<br />wsh.run(prog &amp; progargs)</p><p>&lt;/pre&gt;</p><p><h2 id="Heading2">Debian firefox </h2><a class="url http" href="http://packages.debian.org/experimental/iceweasel">http://packages.debian.org/experimental/iceweasel</a></p><p><h2 id="Heading3">BigFish - Drawn the Painted Tower </h2><a class="url http" href="http://www.bigfishgames.com/download-games/6098/drawn-the-painted-tower/index.html">http://www.bigfishgames.com/download-games/6098/drawn-the-painted-tower/index.html</a></p><p>bittorrent:<a class="url http outside" href="http://www.mininova.org/get/2921858">download</a></p><p>daemon_tools:<a class="url http" href="http://www.filehippo.com/download_daemon_tools/">http://www.filehippo.com/download_daemon_tools/</a><br /></p><hr /><p><h2 id="Heading4">History </h2>[[File:Brion Vibber May 2008.JPG|thumb|Brion Vibber, lead developer during most of MediaWiki's history]]<br />{{Main|MediaWiki release history}}<br />The current software was originally written for [[Wikipedia]] by [[Lee Daniel Crocker]], based on the user interface design of Magnus Manske, a developer and student of the [[University of Cologne]]. Wikipedia had originally used a small wiki engine called [[UseModWiki]] written in [[Perl]]. Wikipedia was later switched to Manske's PHP-based software to offer more functionality.<br />Increasing usage caused load problems, leading Crocker to re-write the software with a more scalable [[MySQL]] database backend. Later, Brion Vibber, the [[Chief Technical Officer]] of the [[Wikimedia Foundation]],&lt;ref&gt;{{cite book|title=Everything Is Miscellaneous: The Power of the New Digital Disorder|author=David Weinberger|year=2007 |publisher=Times Books| isbn = 0805080430|pages=99}}&lt;/ref&gt; took up the role of release manager and most active developer.&lt;ref name=MediaWiki_history&gt;{{cite web|url=http://meta.wikimedia.org/wiki/MediaWiki_history|accessdate = 2007-07-19|title=MediaWiki history|work=MediaWiki website}}&lt;/ref&gt;&lt;ref name="WikipediaandMediaWikiTalk"&gt;{{cite web|url=http://www.youtube.com/watch?v=DWef69ItVrU |date=28 April 2006 |accessdate = 2009-09-23|title=Wikipedia and MediaWiki|work=Presentation MediaWiki development (video)}}&lt;/ref&gt;</p><p>Since the release of the first version of Manske's script, the software had been given multiple nicknames representing the state of development—"the PHP script," "phase II," "phase III," "the new codebase"—but no product name. After the Wikimedia Foundation was announced on June 20, 2003, the name "MediaWiki" was coined by Wikipedia contributor Daniel Mayer as a play on "Wikimedia",&lt;ref&gt;{{cite web|url=http://lists.wikimedia.org/pipermail/wikipedia-l/2003-July/011021.html|last=Mayer|first=Daniel|accessdate =|title=Phase IV, Wikibooks.org/.com and WikimediaFoundation.org/.com (was Wikis and uniformity)|work=Wikipedia-L mailing list archives}}&lt;/ref&gt; and the name was gradually phased in beginning in August 2003. The name has frequently caused confusion due to its intentional similarity to the "Wikimedia" name (which itself is similar to "Wikipedia").&lt;ref&gt;<a class="url http" href="http://www.mediawiki.org/wiki/Wikipmediawiki&lt;/ref">http://www.mediawiki.org/wiki/Wikipmediawiki&lt;/ref</a>&gt; Major milestones in MediaWiki's development have included the categorization system, added in 2004; parser functions, added in 2006; and flagged revisions, added in 2008.&lt;ref name=Introducing&gt;{{citation|title=Introducing new features to Wikipedia|author=M Schindler, D Vrandecic|publisher=Proceedings of WebSci|date=2009|url=http://lyhana8.homelinux.org/fac/ICPS%20-%20S8/Maiw/Introducing%20new%20features%20to%20Wikipedia%20-%20Case%20studies%20for%20Web%20science.pdf}}&lt;/ref&gt;</p><p>The product logo was created by [[Erik Möller]] using a flower photograph taken by [[Florence Nibart-Devouard]], and was originally submitted to an international logo contest for a new Wikipedia logo held in mid-2003.&lt;ref&gt;{{cite web | title = International logo contest/results| url = http://meta.wikimedia.org/w/index.php?title=International_logo_contest/Results&amp;oldid=509000 | author = Wikimedia contributors | work = Meta-wiki | publisher = [[Wikimedia Foundation]] | date = 10 January 2007 | accessdate = 2007-03-14}}&lt;/ref&gt; The logo came in third place, and was chosen to represent MediaWiki instead of Wikipedia, with the second place logo used for the Wikimedia Foundation.&lt;ref&gt;{{cite web | author = Wikimedia contributors | title = Historical/Logo history | url = http://meta.wikimedia.org/w/index.php?title=Meta:Historical/Logo_history&amp;oldid=513925 | publisher = [[Wikimedia Foundation]] | date = 17 January 2007 | accessdate = 2007-03-14 | work = Meta-wiki}}&lt;/ref&gt;<br />The double square brackets around the photo of a [[sunflower]] symbolize the [[Syntax of programming languages|syntax]] MediaWiki uses for creating [[hyperlinks]] to other wiki pages.</p>
+ip: 192.168.1.25
+ts: 1274707027
+minor: 
+host: myplace.hell
+username: xiaoranzzz
+revision: 7
+summary: 
+languages: 
+text: <toc>
+	
+	== VB Shell ==
+	----
+	<pre>
+	dim Args,prog,progargs
+	set Args = WScript.Arguments
+	
+	if(Args.count>0) then
+	    prog = Args.item(0)
+	    dim q
+	    q = chr(34)
+	    prog = q & prog & q
+	    dim i
+	    for i = 1 to Args.count -1
+	        progargs = progargs & " " & q & Args.item(i) & q
+	    next
+	end if
+	
+	dim UserArgs
+	UserArgs = InputBox(_ 
+	    "About to run :" & vbcrlf & prog & vbcrlf & _
+	    "Give it some arguments?" & vbcrlf,"LoadProg" _
+	    )
+	
+	if UserArgs <> "" then
+	    progargs = UserArgs
+	end if
+	
+	Dim wsh
+	Set wsh = WScript.CreateObject("WScript.Shell")
+	wsh.run(prog & progargs)
+	
+	</pre>
+	
+	== Debian firefox ==
+	http://packages.debian.org/experimental/iceweasel
+	
+	== BigFish - Drawn the Painted Tower ==
+	http://www.bigfishgames.com/download-games/6098/drawn-the-painted-tower/index.html
+	
+	bittorrent:[http://www.mininova.org/get/2921858 download]
+	
+	daemon_tools:http://www.filehippo.com/download_daemon_tools/
+	----
+	
+	== History ==
+	[[File:Brion Vibber May 2008.JPG|thumb|Brion Vibber, lead developer during most of MediaWiki's history]]
+	{{Main|MediaWiki release history}}
+	The current software was originally written for [[Wikipedia]] by [[Lee Daniel Crocker]], based on the user interface design of Magnus Manske, a developer and student of the [[University of Cologne]]. Wikipedia had originally used a small wiki engine called [[UseModWiki]] written in [[Perl]]. Wikipedia was later switched to Manske's PHP-based software to offer more functionality.
+	Increasing usage caused load problems, leading Crocker to re-write the software with a more scalable [[MySQL]] database backend. Later, Brion Vibber, the [[Chief Technical Officer]] of the [[Wikimedia Foundation]],<ref>{{cite book|title=Everything Is Miscellaneous: The Power of the New Digital Disorder|author=David Weinberger|year=2007 |publisher=Times Books| isbn = 0805080430|pages=99}}</ref> took up the role of release manager and most active developer.<ref name=MediaWiki_history>{{cite web|url=http://meta.wikimedia.org/wiki/MediaWiki_history|accessdate = 2007-07-19|title=MediaWiki history|work=MediaWiki website}}</ref><ref name="WikipediaandMediaWikiTalk">{{cite web|url=http://www.youtube.com/watch?v=DWef69ItVrU |date=28 April 2006 |accessdate = 2009-09-23|title=Wikipedia and MediaWiki|work=Presentation MediaWiki development (video)}}</ref>
+	
+	Since the release of the first version of Manske's script, the software had been given multiple nicknames representing the state of development—"the PHP script," "phase II," "phase III," "the new codebase"—but no product name. After the Wikimedia Foundation was announced on June 20, 2003, the name "MediaWiki" was coined by Wikipedia contributor Daniel Mayer as a play on "Wikimedia",<ref>{{cite web|url=http://lists.wikimedia.org/pipermail/wikipedia-l/2003-July/011021.html|last=Mayer|first=Daniel|accessdate =|title=Phase IV, Wikibooks.org/.com and WikimediaFoundation.org/.com (was Wikis and uniformity)|work=Wikipedia-L mailing list archives}}</ref> and the name was gradually phased in beginning in August 2003. The name has frequently caused confusion due to its intentional similarity to the "Wikimedia" name (which itself is similar to "Wikipedia").<ref>http://www.mediawiki.org/wiki/Wikipmediawiki</ref> Major milestones in MediaWiki's development have included the categorization system, added in 2004; parser functions, added in 2006; and flagged revisions, added in 2008.<ref name=Introducing>{{citation|title=Introducing new features to Wikipedia|author=M Schindler, D Vrandecic|publisher=Proceedings of WebSci|date=2009|url=http://lyhana8.homelinux.org/fac/ICPS%20-%20S8/Maiw/Introducing%20new%20features%20to%20Wikipedia%20-%20Case%20studies%20for%20Web%20science.pdf}}</ref>
+	
+	The product logo was created by [[Erik Möller]] using a flower photograph taken by [[Florence Nibart-Devouard]], and was originally submitted to an international logo contest for a new Wikipedia logo held in mid-2003.<ref>{{cite web | title = International logo contest/results| url = http://meta.wikimedia.org/w/index.php?title=International_logo_contest/Results&oldid=509000 | author = Wikimedia contributors | work = Meta-wiki | publisher = [[Wikimedia Foundation]] | date = 10 January 2007 | accessdate = 2007-03-14}}</ref> The logo came in third place, and was chosen to represent MediaWiki instead of Wikipedia, with the second place logo used for the Wikimedia Foundation.<ref>{{cite web | author = Wikimedia contributors | title = Historical/Logo history | url = http://meta.wikimedia.org/w/index.php?title=Meta:Historical/Logo_history&oldid=513925 | publisher = [[Wikimedia Foundation]] | date = 17 January 2007 | accessdate = 2007-03-14 | work = Meta-wiki}}</ref>
+	The double square brackets around the photo of a [[sunflower]] symbolize the [[Syntax of programming languages|syntax]] MediaWiki uses for creating [[hyperlinks]] to other wiki pages.
+	
+	
+lastmajor: 7
+keep-ts: 1274707027
+>>>>>>> other
+
+version information
+------- -----------
+Revision 4, Last updated Tue May 25 01:01:08 2010, by xiaoranzzz@myplace.hell
+ts: 1274720468
+lastmajor: 4
+keep-ts: 1274720701

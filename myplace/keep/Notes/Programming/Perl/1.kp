@@ -1,0 +1,15 @@
+= Xiaoranzzz Playing with Perl =
+
+== Modules ==
+=== JSON ===
+JSON - JSON (JavaScript Object Notation) encoder/decoder
+See to http://www.json.org/ and RFC4627(http://www.ietf.org/rfc/rfc4627.txt).
+
+* [[.StrawBerryPerl]]
+
+version information
+------- -----------
+Revision 1, Last updated Tue May 25 01:54:08 2010, by xiaoranzzz
+ts: 1274723648
+lastmajor: 
+keep-ts: 1275065206

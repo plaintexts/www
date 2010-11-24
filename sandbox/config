@@ -1,0 +1,38 @@
+$ENV{PATH} = 'P:/workspace/wiki/cgi-bin/win32/bin';
+$FSEncodingName = "gb2312";
+#$UseCache = 1;
+
+$SiteName = 'SandBox';
+$StyleSheet = "/html/wiki.css";
+$ScriptName = $ENV{SCRIPT_NAME}  || '/sandbox';
+$FullUrl = 'http://' . $ENV{SERVER_NAME} . $ScriptName;
+$ZimDefaultUser = "xiaoranzzz";
+$PageFileExt = ".txt";
+$XRZDebugEnable = 1;
+$ZimDataParser = 1;
+
+
+$FooterNote = '<p class="editnote">
+               <center>
+               <a href="/myplace">MyPlace | </a> <a href="/wiki"> Wiki | </a> <a href="/blog"> Blog | </a> <a href="/sandbox"> SandBox</a></center>
+               This 
+               <span xmlns:dc="http://purl.org/dc/elements/1.1/" href="http://purl.org/dc/dcmitype/" rel="dc:type">site</span>
+               is licensed under a<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+               Creative Commons Attribution-Share Alike 3.0 License
+               </a>.
+               </p>';
+
+
+$UsePathInfo = 1;
+$RCNAME = 'RecentChanges';
+$HomePage = "Main";
+@UserGotoBarPages = ('Main', 'About', 'RecentChanges');
+$CommentsPrefix = 'Comments_on_';
+$CreoleLineBreaks = 1;
+$AdminPass = "foolmehard";
+$EditPass = "foolmeplease";
+$EditAllowed = 1;
+$MaxPost     = 1024 * 1024;
+$UsePathInfo = 1;
+$TopLinkBar = 0;
+

@@ -1,0 +1,43 @@
+/* The icons */
+.bar a { padding-left: 24px; height: 22px; vertical-align:middle; padding-right: 0.5em;}
+.edit.bar a { background: url(emblem-system.png) 0 50% no-repeat }
+.edit.bar a.edit { background-image: url(accessories-text-editor.png)}
+.edit.bar a.history { background-image: url(office-calendar.png)}
+.edit.bar a.admin { background-image: url(preferences-system.png)}
+.edit.bar a.rc { background-image: url(internet-news-reader.png)}
+.edit.bar a.comment { background-image: url(comment.png) }
+.edit.bar a.original { background-image: url(text-x-generic.png) }
+
+.gotobar.bar a { background: url(text-x-generic.png) 0 50% no-repeat }
+/* Hack -- we are depending on the links order. Won't work in msie. */
+.gotobar.bar a:first-child { background-image: url(go-home.png)}
+.gotobar.bar a:first-child + a { background-image: url(internet-news-reader.png)}
+
+form.search input { border: 1px solid #666; height: 22px; vertical-align: middle; padding: 2px; font-size: 18px; }
+form.search input#search { padding-left: 26px; background: url(system-search.png) 2px 50% no-repeat #fff; width: 6em; }
+/* XXX Hack -- no class on the button. Won't work in msie. */
+form.search input[name=dosearch] { display: none; }
+form.search input#searchlang { padding-left: 26px; background: url(internet-group-chat.png) 2px 50% no-repeat #fff; width: 6em; }
+form.search input#replace { padding-left: 26px; background: url(edit-find-replace.png) 2px 50% no-repeat #fff; width: 6em; }
+
+form.edit input, form.comment input { border: 1px solid #666; height: 22px; vertical-align: middle; padding: 2px; font-size: 18px; }
+form.edit input#username, form.comment input#username { padding-left: 26px; background: url(system-users.png) 2px 50% no-repeat #fff; }
+form.edit input#homepage, form.comment input#homepage { padding-left: 26px; background: url(internet-web-browser.png) 2px 50% no-repeat #fff; }
+/* XXX Hack -- no class on the buttons. Won't work in msie. */
+form.edit input[name=Save],form.comment input[name=Save] { padding-left: 26px; height: 28px; background: url(document-save.png) 2px 50% no-repeat #eee; }
+form.edit input[name=Preview], form.comment input[name=Preview] { padding-left: 26px; height: 28px; background: url(document-print-preview.png) 2px 50% no-repeat #eee; }
+
+
+form.filter input { border: 1px solid #666; height: 22px; vertical-align: middle; padding: 2px; font-size: 18px; }
+form.filter input#rcmatch { padding-left: 26px; background: url(emblem-symbolic-link.png) 2px 50% no-repeat #fff; }
+form.filter input#rcfilteronly { padding-left: 26px; background: url(text-x-generic.png) 2px 50% no-repeat #fff; }
+form.filter input#rcuseronly { padding-left: 26px; background: url(system-users.png) 2px 50% no-repeat #fff; }
+form.filter input#rchostonly { padding-left: 26px; background: url(network-server.png) 2px 50% no-repeat #fff; }
+form.filter input[name=dofilter] { padding-left: 26px; height: 28px; background: url(dialog-apply.png) 2px 50% no-repeat #eee; }
+
+div.languages input[name=dolang] { border: 1px solid #666; height: 22px; vertical-align: middle; padding: 2px; font-size: 18px; padding-left: 26px; height: 28px; background: url(internet-group-chat.png) 2px 50% no-repeat #eee; }
+/* Hack */
+
+/* The rss link */
+.bar a[title="RSS 1.0"] { padding: 0; background-image: none; }
+

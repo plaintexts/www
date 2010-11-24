@@ -1,0 +1,15 @@
+/* The lang table */
+body[class='http://www.oddmuse.org/cgi-bin/wiki'] table.user,
+body[class='http://www.oddmuse.org/cgi-bin/oddmuse'] table.user,
+body[class='http://www.oddmuse.org/cgi-bin/wiki/SiteMap'] table.user,
+body[class='http://www.oddmuse.org/cgi-bin/oddmuse/SiteMap'] table.user 
+
+{ float: right; margin: 6pt; background: #fafafa; margin-right: -24pt; }
+
+
+body[class='http://www.oddmuse.org/cgi-bin/wiki'] table.user a.outside,
+body[class='http://www.oddmuse.org/cgi-bin/oddmuse'] table.user a.outside, 
+body[class='http://www.oddmuse.org/cgi-bin/wiki/SiteMap'] table.user a.outside,
+body[class='http://www.oddmuse.org/cgi-bin/oddmuse/SiteMap'] table.user a.outside 
+
+{ display: block; border: none; text-align: left; background-image: url(internet-group-chat.png); margin: 2px }

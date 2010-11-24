@@ -1,0 +1,2285 @@
+/* ====================[ raiazome.css                       ]====================
+                       [ Time-stamp: "2009-04-08 14:40:15 leycec" ]
+
+The default CSS stylesheet for Brian Curry's "Raiazome"
+<http://www.raiazome.com>, an Oddmuse Wiki. This stylesheet leverages several
+bleeding-edge, leading-edge features of the CSS standard - especially:
+
+1. Em-based positioning of all elements.
+2. Rounded edges for container elements.
+3. Font typesetting of textual elements.
+4. Avoidance of all images and image hacks.
+
+"Em-based positioning of all elements" achieves portable, reliable positioning
+and resizing of [X]HTML elements cross browser, platform, and user-preferences.
+See "FONTS =em", below.
+
+"Rounded edges for container elements" achieves edge rounding without usage of
+external images, JavaScript, or other fickle hacks; rather, this uses only
+(admittedly browser-specific) CSS properties. Thus, this is the "forward-
+compatibily" solution; most browsers will, eventually, support the browser-
+independent "border-radius" CSS property. See "border-radius", below.
+
+"Font typesetting of textual elements" means adherence to typographical
+standards as defined by such Digital Age luminaries as Richard Rutter and
+Robert Bringhurst. See "FONTS =typesetting", below.
+
+"Avoidance of images and image hacks" means just that; customarily, I consider
+most usage of images for page design, rather than page content, to be
+indefensible, unjudicious hacks. Several reasons, then: such images 
+superfluously increase page footprints (in transmission time and consumed cache-
+space from source server through intermediary router to target client), inhibit
+page accessibility (for embedded devices, such as cell phones, low-end devices,
+such as this degenerate 500MHz iBook I'm currently slaving on, and low- or no-
+vision humans), and, in general, do more to harm a site's actual content than
+help. (Witness "craigslist.com", "google.com", "reddit.com", and "wikipedia.com".)
+
+---------------------( RIVER CITY RANSOM                  )---------------------
+FIXME: Ugh. Rewrite! And post to a new "Famicom--Downtown Nekketsu Motogatari" page. :)
+
+River City Ransom (or Downtown Nekketsu Monogatari) was an NES (or Famicom) video
+game released in the far-away alleyways of 1989. This game has (generally) been
+thought te be among the best "beat 'em up" games of any system -- and
+certainly for the NES/Famicom.
+
+Having devoted some dagger-flashing, sweaty hours of childhood's ease into
+appeasement of this gamed addiction, I'll do some homage to that addiction with this frivolous,
+frothy stylesheet: entitled, simply, "Nekketsu_Downtown.css".
+
+"BARF!", and may we never fall into too much black seriousness.
+
+---------------------( CASCADE RESOLUTION                 )---------------------
+CSS resolves stylesheet discrepency by applying stylesheets "in cascade," as
+follows from least to highest precedence:
+
+1. External author stylesheets; i.e., HTML-external CSS files authored by the
+   maintainer of that site.
+2. Internal author styles; i.e., HTML-internal CSS stylesheets authored by the
+   maintainer of that site.
+3. Inline author styles; i.e., HTML-internal CSS tag-attributes authored by the
+   maintainer of that site.
+4. External user stylesheets; i.e., HTML-external CSS files authored by the
+   current user of that site.
+5. External user agent stylesheets; i.e., HTML-external CSS files authored by the
+   current user's browser for that site.
+
+---------------------( SELECTOR SYNTAX                    )---------------------
+CSS classes, preceded by the "." character in CSS and denoted by the "class"
+attribute in [X]HTML, may be reused, multiple times, in that CSS. CSS classes,
+thus, are reusable labels. (An [X]HTML class attribute specifying multiple class
+names separated by whitespace, as in "class='gotobar bar'", implies that all of
+the styles specified by all of those classes will be applied to that [X]HTML
+element. A convenience, if slightly non-intuitive.)
+
+CSS ids, preceded by the "#" character in CSS and denoted by the "id"
+attribute in [X]HTML, may be used only once in that CSS. CSS ids, thus, are
+unique identifiers.
+
+CSS descendant selectors, separated by whitespace, match some [X]HTML elements
+eventually descended from some other [X]HTML elements. Thus, "P EM" selects all
+<em> tags descended, however deeply, from some <p> tag.
+
+CSS children selectors, separated by the ">" character, match [X]HTML elements
+immediately descended from some other [X]HTML elements. Thus, "P > EM" selects
+all <em> tags descended directly from some <p> tag.
+
+CSS adjacent sibling selectors, separated by the "+" character, match [X]HTML
+elements immediately sibling to another [X]HTML element. Thus, "P + P" selects
+all <p> tags immediately preceded by another <p> tag under the same parent tag.
+
+CSS attribute selectors, grouped by the "[" and "]" characters, match [X]HTML
+element attributes. The syntax, here, is rather convoluted; thus, see:
+  http://www.456bereastreet.com/archive/200510/css_21_selectors_part_2
+
+---------------------( BOX MODEL                          )---------------------
+The box model conceptualizes CSS-styled pages as composed of nested boxes.
+
+ "According to the W3C, an assigned 'width' (and 'height') of a box refers to
+  the 'content area' of a box only. The padding, borders, and margins are then
+  added to this value to arrive at the total box width. If the 'width' property
+  is omitted, the total box width is the same as the 'content area' of the
+  surrounding container element."
+
+The box model often leverages floating and clearing elements, to effect this.
+The float attribute is relatively straight-forward; left-floating elements are
+floated to the left of all other block-level elements in the block context for
+those elements; and so on, for right-floating elements. This, thus, is one
+mechanism for mimicing magazine-style publication of floating images about text.
+The clear attribute, however, is not straight-forward. It serves as a mechanism
+for clearing a preceding float attribute for all proceeding block-level
+elements; in short, non-cleared floating elements position horizontally adjacent
+to the first floating element in that series, while cleared floating elements
+position vertically adjacent to that element. In this verbal context, 'to clear'
+is synonymous with 'to push beneath.' Here's how, courtesy
+http://developer.mozilla.org:
+
+ "The clear property specifies whether an element can be next to floating
+  elements that precede it or must be moved down (cleared) below them.
+
+  Values:
+  * none :  Element is not moved down to clear past floating elements.
+  * left :  Element is moved down to clear past left floats.
+  * right : Element is moved down to clear past right floats.
+  * both :  Element is moved down to clear past both left and right floats."
+
+For further details on the stark mundanities of CSS positioning, see:
+  http://www.quirksmode.org/css/display.html
+  http://www.barelyfitz.com/screencast/html-training/css/positioning/
+
+---------------------( SHORTHAND                          )---------------------
+Shorthand cardinal values for the "margin", "padding", and "border-width"
+CSS properties by (a) specifying all cardinal values in clockwise fashion,
+beginning with the top value, with form "property: top right bottom left"
+or (b) specifying two "combined" cardinal values, combining the top and bottom
+values into one value and right and left values into another, with form
+"property: top/bottom right/left". See:
+  http://www.htmldog.com/guides/cssintermediate/multivalue/
+
+---------------------( BORDERS                            )---------------------
+Mozilla, Safari, and the CSS3 specification allow rounding of border corners.
+We make liberal, albiet hacky, use of this poorly supported specification. See:
+  http://www.the-art-of-web.com/css/border-radius
+
+---------------------( FONTS                              )---------------------
+The "@font-face" attribute validates under CSS 2 and 3, but not CSS 2.1. Also,
+neither Firefox or Internet Explorer support this tag, as of yet. Webkit (Safari),
+however, does. Optionally, this could be replaced by sIFR--an open-source,
+server-side application supplanting appropriately marked text with Flash text.
+(A tad heavyweight, that one.) For CSS 3-specific details, see:
+  http://www.w3.org/TR/css3-webfonts/
+
+"line-height" is the CSS equivalent of typographical leading.
+
+Note: it is suggested that you use the "font" attribute rather than "font-family"
+attribute when specifying fonts for [X]HTML elements, since the former attribute
+permits exact specification, by name, of which font to use; the latter attribute
+permits an only vague suggestion of which font "family" to use.
+
+---------------------( FONTS =em                          )---------------------
+"em"-style font sizes are, in general, preferable to "px"-style font sizes. See:
+  http://clagnut.com/blog/348/
+
+"em"-style font sizes are relative to their parent container, rather than
+absolute across all containers (as "px"-style font sizes are). This makes them
+rather unwieldy to work with, in practice, as deeply nesting [X]HTML elements
+marked with "em"-style font sizes causes those font sizes to progressively
+increase or decrease as that nesting increases, according to their "em" value.
+(Troubling, but such is the artless state of this world.)
+
+"em"-style font sizes may be specified to three decimal places.
+
+An "em" is, from that page, "...a typographer's unit of horizontal spacing and is
+a sliding (relative) measure. One em is a distance equal to the text size. In 10
+pixel type, an em is 10 pixels; in 18 pixel type it is 18 pixels. Thus 1em of
+padding is proportionately the same in any text size."
+
+One of the better posts on that same page notes that "Good web designs embrace
+that, sizing as much as possible in % or ems for text and containers, leaving px
+for minor adjustments like padding, margins or borders."
+
+---------------------( FONTS =typesetting                 )---------------------
+Richard Rutter's "The Elements of Typographic Style Applied to the Web," based
+on that seminal work by Robert Bringhurst, is a needful introduction to online
+typography; see:
+  http://webtypography.net
+
+His section on vertical rhythm, particularly, comes recommended; see:
+  http://webtypography.net/Rhythm_and_Proportion/Vertical_Motion/2.2.2/
+
+---------------------( TODO                               )---------------------
+* Sweet! If I use a one-pixel background (of the same color as it currently is),
+  repeated on the X and Y, I can probably get color out of "links -g". Actually,
+  I should be able to do this on a Links-specific basis. Yes? Could make a chill
+  module extension.
+*/
+
+/* ....................{ FONTS                              }....................
+"Nekketsu Downtown" is a bitmap-based conversion of the River City Ransom font,
+originally released as a Windows-specific FON font file by Ben Pippin in 2004. Our
+fondest thanks, Ben!
+
+B.w.Curry has, since, converted that font into an architecture-independent PCF
+font file by leveraging FontForge -- a fine, finely graphical font studio for
+*nix. Quite recommended.
+*/
+/* FIXME: Ignored, for now. Consider usage when usage of CSS3 becomes widespread. */
+/* @font-face { */
+/*   font-family: "Nekketsu Downtown"; */
+/*   src: url("Nekketsu_Downtown.ttf") format("truetype"); */
+/* } */
+
+/* ....................{ HTML =body                         }.................... */
+/* Undo all default padding and margins for all [X]HTML elements. Most browsers add
+   some non-standard amount of such padding and margins, by default; but, as this
+   amount is non-standard across browsers, this stylesheet cannot reliably change
+   padding or margins in a cross-browser manner (since all such changes would be
+   relative to browser-specific defaults). By undoing these defaults, now, we
+   improve the browser-agnosticism of this stylesheet.
+*/
+* { padding: 0; margin: 0; }
+
+/* All browsers. */
+body {
+  background: #678;
+  color:      #ffffff;
+
+  margin:      0.500em 1.5%;
+  font-size:   1.000em;
+  line-height: 1.625em; /* 26px-high lines. (This is typographic "leading".) */
+}
+
+/* Only IE. (All other browsers rightly ignore this style.) */
+* html {
+  font-size: 100%; /* (IE-specific hack, for decent resize behavior.) */
+}
+
+/* All browsers except IE. (IE wrongly ignores this style.) */
+html>body { }
+
+/* ....................{ HTML =fonts                        }.................... */
+/* WARNING: CSS "font-family:" specifications are case-sensitive and are, in fact,
+            entirely up to the client-side operating system to parse apart. */
+
+/* A selection of acceptable monospaced fonts. */
+body.mono,
+pre,
+form,
+form input, form input#recaptcha_response_field,
+form.text textarea#summary,
+div.header p.subtitle,
+div.hibernal_archive div.year div.month div.month_body,
+div.hibernal div.posts div.post div.post_header p.subtitle,
+div.dialogue div.dialogue_sketch, div.dialogue div.dialogue_sketch>h2,
+div.footnotes, div.footnotes>h2,
+div.toc,       div.toc      >h2,
+div.footer div.time,
+div.footer p.mirrornote {
+  font-family:
+    /* Unicode; free. */
+    "Inconsolatas",
+    "Consolas",  /* ...not free at all, but ubiquitous enough to be! */
+    "DejaVu Sans Mono",
+    /* Unicode; non-free. */
+    "Everson Mono",
+    /* Non-Unicode; *nix. */
+    "Bitstream Vera Sans Mono",
+    "Nimbus Mono L",
+    "Luxi Mono",
+    /* Non-Unicode; OS X. */
+    "Monaco",
+    "Andale Mono",
+    /* Non-Unicode; generic. */
+    "Courier",
+    "Courier New",
+    "Lucida Console",
+    monospace;
+}
+
+/* A selection of acceptable cursive fonts. Few support Unicode, unfortunately. */
+body.cursive,
+h1, h2, h3, h4, h5, h6,
+div.message a,
+pre.poem p:first-child:first-letter {
+  text-align: left;
+
+  font-weight: normal;
+  font-family:
+    /* Non-Unicode; preferred. */
+    "Caflisch Script",
+    "Poetica",
+    "Sanvito",
+    "Ex Ponto",
+    "Snell Roundhand",
+    "Nuptial Script",
+    "Palace Script",
+    "Park Avenue",
+    "Poetica",
+    "Shelley",
+    "Kaufmann",
+    /* Non-Unicode; *nix. */
+    "URW Chancery L",
+    /* Non-Unicode; OS X. */
+    "Zapfino",
+    "Apple Chancery",
+    "Brush Script MT",
+    "Handwriting - Dakota",
+    /* Non-Unicode; Windows. */
+    "Edwardian Script ITC",
+    "French Script MT",
+    "Monotype Corsiva",
+    "Vivaldi",
+    "Freestyle Script",
+    "Bickley Script",
+    "Briemscript",
+    "Kunstler Script",
+    "Matura MT Script Capitals",
+    "Matura",
+    "Mead Bold",
+    "Mercurius Script MT",
+    "Mercurius Script MT",
+    "Mercurius",
+    "Palace Script MT",
+    "Script MT Bold",
+    "Vladimir Script",
+    "Zurich Calligraphic",
+    /* Non-Unicode; generic. */
+    cursive;
+}
+
+/* A selection of acceptable serif fonts.
+
+   Note that this selection appears after all other font selections, so as to
+   override those selections with a less flamboyant set of fonts, as needed. */
+body,
+div.imprint,
+div.rc h2, div.rc form[method="post"] ul li span.dash + strong,
+pre.poem, pre.haiku p:first-child:first-letter,
+textarea, #recaptcha_instructions_image {
+  font-family:
+    /* Unicode; free. */
+    "TITUS Cyberbit",
+    "Caslon",
+    "Doulos SIL",
+    "Charis SIL",
+    "DejaVu Serif",
+    "Linux Libertine",
+    "Gentium",
+    "Junicode",
+    /* Unicode; non-free. */
+    "Bitstream Cyberbit",
+    "Code2000",
+    /* Unicode; fallback. */
+    "Times New Roman",
+    /* Non-Unicode; *nix. */
+    "Bitstream Vera Serif",
+    /* Non-Unicode; OS X. */
+    "Cochin",
+    "Baskerville",
+    "Hoefler Text",
+    "Didot",
+    "Georgia",
+    "Palatino",
+    "Big Caslon",
+    /* Non-Unicode; Windows. */
+    "Lucida Bright",
+    "Georgia",
+    /* Non-Unicode; generic. */
+    serif;
+}
+
+/* ....................{ HTML =headers                      }.................... */
+h1,   h2,   h3,   h4,   h5,   h6,
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+div.message a {
+  color: #9977ff;
+}
+
+/* ....................{ HTML =separators                   }.................... */
+/* A linebreak. Note that, unfortunately, it appears literally impossible to
+   specify the height a browser allocates to this linebreak. I have tried every
+   conceivable CSS attribute, to no effect. */
+/* br { display: block; } */
+
+/* A hard return: a linebreak visible as a horizontal line. */
+hr {
+  /* Hide the non-descript, typically grey horizontal line that most browsers, by
+     grim default, display. Rather, simply show the border below. */
+  display: block;
+
+  border: #112244 thin solid;
+  margin: 0.750em 0.000em;
+}
+
+/*
+br + br {
+  display: none;
+}
+*/
+
+/* A hard return in a container whose background masks by the above border. */
+blockquote hr, pre hr,
+table.user tr td hr,
+div.dialogue div.dialogue_script div.dialogue_script_line hr {
+  border-color: #223355;
+  margin: 0.250em 0.000em;
+}
+
+/* A hard return in a poem. */
+pre.poem hr {
+  border-color: #445570;
+  margin: 0.250em 0.000em;
+}
+
+/* ....................{ HTML =paragraphs,linebreaks        }.................... */
+/* A paragraph. */
+p, br + p {
+  /* Do not indent the first paragraph of any section, but do indent every
+     paragraph thereafter. Also, do not separate paragraphs by block, vertical
+     whitespace, but rather by horizontal indendation. */
+  text-indent: 0.000em;
+}
+
+/* A paragraph preceded by another paragraph. */
+p + p {
+  /* Do not indent the first paragraph, but do indent all subsequent paragraphs. */
+  margin-top:  0.000em;
+  text-indent: 1.375em;
+}
+
+/* A paragraph preceded by a manual linebreak. */
+br + p {
+  margin-top: 0.250em;
+}
+
+/* A paragraph in blockquotes, a preformatted block, or a form. */
+blockquote p, pre p, form p, p.image + p {
+  text-indent: 0.000em;
+  margin-top:  0.000em;
+}
+
+/* A paragraph preceded by a paragraph in blockquotes or a preformatted block. */
+blockquote p + p, pre p + p {
+  margin-top: 0.750em;
+}
+
+/* ....................{ HTML =blockquotes,code,pre         }.................... */
+/* Blockquotes or a preformatted block. */
+blockquote, pre {
+  background: #112244;
+  border:     #001133 thin solid;
+
+  margin:  1.500em 0.000em;
+  padding: 0.375em 1.375em 0.625em 1.375em;
+
+  line-height: 1.500em;
+  font-style: italic;
+}
+
+/* A code block or a preformatted block. */
+code, pre, div.hibernal_archive div.year div.month div.month_body {
+  /* Mozilla-, Opera-, and CSS3-specific whitespace for monospaced fonts; see:
+       http://forums.techguy.org/archive/index.php/t-249849.html
+   */
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap; 
+}
+
+blockquote:first-child, pre:first-child { margin-top:    0.500em; }
+blockquote:last-child,  pre:last-child  { margin-bottom: 0.500em; }
+
+/* A code block. */
+code {
+  color: #ffffff;
+  font-size: 1.313em;
+}
+
+/* A preformatted block. */
+pre, div.hibernal_archive div.year div.month div.month_body {
+  line-height: 1.000em;
+}
+
+/* Italicized text in a paragraph in blockquotes or a preformatted block. */
+blockquote>p em, pre>p em { font-style: normal; }
+
+/* A paragraph preceded by blockquotes or a preformatted block. */
+blockquote + p, pre + p {
+  /* This should be an implicit consequence of the "margin: " setting for the
+     "blockquote" selector, above. Unfortunately, it isn't. We forcefully set it,
+     here. */
+  margin-top: 1.500em;
+}
+
+/* Blockquotes or a preformatted block in a table. */
+table tr td blockquote, table tr td pre {
+  background: #001133;
+  border:     #223355 thin solid;
+}
+
+/* ....................{ HTML =forms                        }.................... */
+/* A form. */
+form { }
+
+/* A form paragraph. */
+form p,
+div.footer div.time {
+  color: #99aacc;
+}
+
+/* A top-level paragraph, list, or other block-level element. */
+form>p, form>div.question,
+form>dl, form>ol, form>ul {
+  font-size: 0.688em;
+}
+
+/* A top-level paragraph. */
+form>p {
+  /* Sequester this in a "form p" selector, so as avoid also selecting "div"
+     elements in that form, which often adhere to different font needs. */
+  font-weight: bold;
+}
+
+/* Form multi-line text areas, single-line text boxes, and buttons. */
+form input, form input#recaptcha_response_field,
+form select,
+form option,
+form textarea,
+form.text p a.upload {
+  /* The "!important", here, is quite important; it ensures these CSS attributes
+     overwrite similar attributes for CSS stylesheets embedded by third-party
+     plugins, modules, and extensions. */
+  background: #001144 !important;
+  color:      #ffffff !important;
+  border:     #000022 thin solid !important;
+
+  /* Undo font settings altered by the "form p" selector, above. */
+  font-size: 1.000em;
+  font-weight: normal;
+}
+
+/* A form multi-line text area. */
+form textarea {
+  width:   97.5%; /* Most available box width. */
+  padding: 0.125em 0.500em;
+}
+
+/* A form single-line text boxes and buttons. */
+form input,
+form.text p a.upload {
+  margin:  0.000em;
+  padding: 0.375em 1.000em;
+
+  /* Oddly necessary; this ensures the text for a text button "lines up,"
+     vertically, with that button. */
+  vertical-align: middle;
+}
+
+/* Highlight text boxes and buttons, when hovered over with the mouse. */
+form input:hover, form input#recaptcha_response_field:hover,
+form textarea:hover,
+form.text p a.upload:hover {
+  color: #ff9999;
+}
+
+/* Text fields and text submission buttons. */
+form input[type='text'], form input#recaptcha_response_field,
+form input[type='submit'] {
+  padding: 0.125em 0.500em 0.150em 0.500em;
+}
+
+/* Form radio- and checkbox-buttons. Sadly, these cannot be color-styled with
+   CSS; see: http://brainerror.net/scripts/javascript/checkbox/ */
+form input[type='radio'],
+form input[type='checkbox'] {
+  background: transparent;
+  margin-right: 1.000em;
+}
+
+/* ....................{ HTML =images                       }.................... */
+img {
+  /* Ring images in a slight border, of one uniform color. */
+  background: #112244;
+
+  /* Vertically separate images from surrounding elements. */
+  margin:  1.125em 0.000em;
+  padding: 0.125em;
+
+  /* Do not display images as blocks, since that causes the browser to interpret the
+     entire screen's width, where it places that image, as a trigger for the link to
+     which that image points. */
+  display: inline;
+
+  /* Confine images to their bounding box. (Hacky, but suffices... seemingly.) */
+  max-width: 99.5%;
+
+  /* Align horizontally adjacent images as best as can be. */
+  vertical-align: top;
+}
+
+/* Links displayed as images are bordered, by default, by the same color used for
+   links displayed as texts; this undoes that. */
+a img { border: none; }
+
+/* A link having an image as its content. */
+a.image { }
+
+/* A link having an image preceded by another such link. */
+a.image + a.image {
+  margin-left: 1.500em;
+}
+
+/* Left- and right-floating links, as marked up by the Image extension. */
+a.left  img { float: left; }
+a.right img { float: right; }
+
+/* A paragraph beginning with an image. */
+p.image {
+  text-indent:   0.000em;
+}
+
+/* The image in a paragraph beginning with an image. */
+p.image img {
+  margin-top:    2.250em;
+  margin-bottom: 2.250em;
+
+  /* margin-bottom: 1.125em;/* Center the image. This requires, unfortunately, that we remake that image
+     into a block (rather than inline) HTML element. This extends the image's
+     link into the margins of its bounding box -- but, as we want centering, is
+     unavoidable. (Oh, CSS.) */
+  display:      block;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+/* Firefox behaves oddly, insofar as paragraphs having one and only one image
+   are concerned. This corrects that. */
+p.image img:first-child { margin-top:    1.125em; }
+p.image img:last-child  { margin-bottom: 0.625em; }
+
+/* A paragraph image preceded by a heading. */
+h1 + p.image img, h2 + p.image img, h3 + p.image img,
+h4 + p.image img, h5 + p.image img, h6 + p.image img {
+  /* An unrespectable hack. "h1 + p", elsewhere, adds "margin-top" -- in
+     addition to the "margin-top" that "img" already adds. This undoes that. */
+  margin-top: -0.063em;
+}
+
+/* A hard return preceded by a paragraph image. */
+p.image + hr {
+  margin-top: -2.125em;
+}
+
+/* The image in a paragraph beginning with an image, in a poem. */
+pre.poem p.image img {
+  margin-top:    1.500em;
+  margin-bottom: 1.500em;
+}
+
+pre.poem p.image:first-child img { margin-top:    0.625em; }
+pre.poem p.image:last-child  img { margin-bottom: 0.625em; }
+
+/* ....................{ HTML =links                        }.................... */
+/* A link. */
+a       { color: #22ddff; border-bottom: #334466 thin dotted; text-decoration: none; }
+a:hover { color: #ff9999; border-bottom-style: solid; }
+
+/* A link to create a non-existant page (i.e., the “?” following that page's name). */
+a.edit       { color: #aaaaaa; }
+a.edit:hover { color: #eeeeee; }
+
+/* A link to a non-page (i.e., a non-vital, explanatory link of some Wiki facet). */
+form        a,
+div.footer  a,
+div.imprint a         { color: #bbbbbb; }
+form        a:visited,
+div.footer  a:visited,
+div.imprint a:visited { color: #777777; }
+form        a:hover,
+div.footer  a:hover,
+div.imprint a:hover   { color: #ffffff; }
+
+/* A local anchor definition. */
+a.definition {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* The Wiki name in an interlink to another Wiki. */
+a span.site      { display: none; }
+/* The Wiki name separator in an interlink to another Wiki. */
+a span.separator { display: none; }
+
+/* ....................{ HTML =lists                        }.................... */
+/* A definition, ordered, or unordered list. */
+dl, ol, ul {
+  background: #112244;
+  border:     #000044 thin dotted;
+
+  margin:  1.000em 0.000em;
+  padding: 0.313em 1.000em;
+
+     -moz-border-radius: 0.750em;
+  -webkit-border-radius: 0.750em;
+          border-radius: 0.750em;
+}
+
+/* A definition, ordered, or unordered list in a table. */
+table dl, table ol, table ul {
+  background: transparent;
+  border:     none;
+
+  margin-left:  0.000em;
+}
+
+table tr td>dl:first-child, table tr td>ol:first-child, table tr td>ul:first-child {
+  margin-top:  0.000em;
+  padding-top: 0.000em;
+}
+
+table tr td>dl:last-child, table tr td>ol:last-child, table tr td>ul:last-child {
+  margin-bottom:  0.000em;
+  padding-bottom: 0.000em;
+}
+
+/* A nested definition, ordered, or unordered list. */
+dl dl, ol ol, ul ul {
+  border: none;
+}
+
+/* An ordered or unordered list. */
+ol, ul {
+  /* Position list bullets outside the bounding box for that list--not inside it.
+     This ensures left-alignment of all text following those list bullets, but
+     also migrates that text to the left. We add a "padding-left" offset, below,
+     to accomodate that. */
+  list-style-position: outside;
+}
+
+/* An ordered list. */
+ol {
+  padding: 0.313em 0.250em 0.188em 2.750em;
+
+  /* This forces top-level list items in that list to be oversized. */
+  font-size: 1.125em;
+}
+
+/* A nested ordered list. */
+ol ol {
+  margin:  0.063em 0.000em 0.375em 1.500em;
+  padding: 0.000em;
+
+  /* This forces sub-level list items in that list to become progressively
+     smaller, in accordance with their indentation. */
+  font-size: 0.900em;
+}
+
+/* An ordered list. (1st, 2nd, 3rd, 4th, 5th, and 6th levels.) */
+ol                { list-style-type: upper-roman; }
+ol ol             { list-style-type: decimal; }
+ol ol ol          { list-style-type: upper-alpha; }
+ol ol ol ol       { list-style-type: lower-alpha; }
+ol ol ol ol ol    { list-style-type: lower-greek; }
+ol ol ol ol ol ol { list-style-type: lower-roman; }
+
+/* An unordered list. */
+ul {
+  /* Do not prepend unordered list items with graphical bullets; rather, prepend
+     list items with a string. See the "ul li:before" selector, below.*/ 
+  list-style-type: none;
+
+  /* O.K.; this is wildly interesting. We wish to indent every continuation line
+     of a list element (that is, every line except the list element's first line)
+     past the number ordering that element, which gives a rather "pristine" look.
+     To do this, we indent every line (even the first) by a certain amount, then
+     de-indent the first line by that same amount, by usage of the "text-indent"
+     attribute: which is only ever applied to the first line.
+     */
+  text-indent: -1.625em;
+  padding-left: 2.625em;
+}
+
+/* A nested unordered list. */
+ul ul {
+  border: none;
+
+  /* Undo enough of the above "text-indent" and "padding-left" to place nested
+     unordered list items under their parent unordered list items. */
+  margin: 0.000em 0.000em 0.000em -1.000em;
+  padding-top:    0.000em; /* Do not undo the "padding-left", however. */
+  padding-bottom: 0.000em;
+  padding-right:  0.000em;
+}
+
+/* A nested definition list. */
+dl dl {
+  margin:  0.000em 0.000em 0.000em 1.125em;
+  padding: 0.000em;
+}
+
+/* A definition list term. */
+dt {
+  color: #aaaaee;
+  line-height: 1.313em;
+  
+  float: left;
+
+  /* A mean-spirited magic number, permitting the indentation hack for definition
+     list definitions, below, to properly proceed. */
+  padding-right: 1.25em;
+}
+
+/* A definition list definition. */
+dd {
+  color: #8888cc;
+  line-height: 1.313em;
+
+  /* O.K.; see comments for similar attributes in the "ul" selector, above. */
+  text-indent: -1.250em;
+  padding-left: 1.250em;
+}
+
+/* An ordered, or unordered list item. */
+ol li, ul li {
+  color: #8888cc;
+  line-height: 1.313em;
+}
+
+/* A link in an ordered or unordered list item. */
+dt    a, dd    a,
+ol li a, ul li a             { color: #bbbbbb; border-bottom: #334466 thin dotted; }
+dt    a:hover, dd    a:hover,
+ol li a:hover, ul li a:hover { color: #ffffff; border-bottom: #556688 thin dotted; }
+
+/* Prepend definition list items and unordered list items with a string. */
+dt:after, ul li:before {
+  /* The escaped Unicode sequence for a right arrow. */
+  content: "\2192";
+  color: #bbbbff;
+}
+
+dt:after {
+  margin-left:  0.500em;
+  margin-right: 0.500em;
+}
+
+ul li:before {
+  margin-right: 0.625em;
+  font-size:    1.125em;
+  font-weight: bold;
+}
+
+/* ....................{ HTML =objects                      }.................... */
+/* A non-HTML, embedded object - typically, a youtube.com Flash video. Note that,
+   for whatevery lapsed reason, the browser does not respect "margin" or "padding"
+   attributes on this selector. */
+object { }
+
+/* A paragraph beginning with such an object. */
+p.flashbox {
+  background: #334466;
+  border:     #112255 0.125em solid;
+
+  margin:  1.500em auto;
+  padding: 1.500em 0.000em 0.500em 0.000em;
+
+  text-align:  center;
+  text-indent: 0.000em;
+}
+
+/* ....................{ HTML =tables                       }.................... */
+/* A "user" table (i.e., a table embedded by a "user" into a Wiki page.) */
+table.user {
+  /** See: http://www.w3.org/TR/REC-CSS2/tables.html#borders */
+  border-collapse: separate;
+  border-style: none;
+
+  margin: 1.250em 0.000em;
+
+  /* Do not confine user-embedded tables to their bounding box. We'd prefer to;
+     however, that has the dismal effect of disabling the user-agent algorithm
+     apportioning all table cells a width on the basis of the string length of the
+     contents of that table cell. As such, at the moment, we disable this. */
+  table-layout: auto;
+}
+
+table.user:first-child { margin-top:    0.250em; }
+table.user:last-child  { margin-bottom: 0.250em; }
+
+/* A table preceded by a header. */
+h1 + table.user, h2 + table.user, h3 + table.user,
+h4 + table.user, h5 + table.user, h6 + table.user { margin-top: 0.250em; }
+
+/* A paragraph preceded by a table. */
+table.user + p {
+  margin-top: 0.500em;
+}
+
+/* A table row. */
+table.user tr {
+  margin: 0.000em;
+}
+
+/* A table cell or table cell header. */
+table.user tr td,
+table.user tr th {
+  margin:  0.000em;
+  padding: 0.438em 1.063em;
+
+  text-align:     left;
+  vertical-align: top;
+}
+
+/* A table cell header. */
+table.user tr th {
+  background: #112244;
+  border:     #001133 thin solid;
+  
+  font-variant: small-caps;
+}
+
+/* A table cell. */
+table.user tr td {
+  background: #112244;
+  border:     #001133 thin solid;
+}
+
+/* ....................{ GENERIC CLASSES                    }.................... */
+/* Centered text. */
+span.center { text-align: center; }
+
+/* Floating dividers. */
+/* div.left            { float: left; } */
+/* div.right           { float: right; } */
+/* div.left  div.left, */
+/* div.right div.right { float: none; } */
+
+/* ....................{ ODDMUSE =blocks                    }.................... */
+/* All blocks, including the main, header, and footer blocks. */
+div.comment,
+div.content,
+div.diff,
+div.error,
+div.footer, div.header, 
+div.near,
+div.rc,
+div.crossbar, 
+div.sister,
+div.wrapper>p {
+  background: #223355;
+
+  margin:  0.500em 0.000em;
+  padding: 0.000em 1.000em;
+}
+
+/* All blocks, excluding the header and footer blocks. */
+div.comment,
+div.content,
+div.diff,
+div.error,
+div.near,
+div.rc,
+div.crossbar, 
+div.sister,
+div.wrapper>p {
+  border: #112244 0.333em double;
+}
+
+/* All blocks, including the header block but not the footer block. */
+div.comment, 
+div.content, 
+div.diff,
+div.error,
+div.header,
+div.near,
+div.sister,
+div.rc,
+div.crossbar,
+div.sister,
+div.wrapper>p {
+     -moz-border-radius: 1.000em;
+  -webkit-border-radius: 1.000em;
+          border-radius: 1.000em;
+}
+
+/* The main block, enclosed by the header block (above) and footer block (below). */
+div.content,
+div.error,
+div.rc,
+div.wrapper>p {
+  padding-top:    0.250em;
+  padding-bottom: 0.750em;
+}
+
+/* The close of a "div.wrapper" block. Only Odin knows why Oddmuse provides a
+   separate "div" block for the close of a "div.wrapper" block; but, there it is. */
+div.close { display: none; }
+
+/* ....................{ ODDMUSE =block headers              }.................... */
+div.content h1, div.content h2, div.content h3,
+div.content h4, div.content h5, div.content h6,
+div.hibernal div.posts div.post div.post_header {
+  /* Do not override "border-width" for headers, as headers of differing depth and
+     purpose tend to set different "border-width" values. */
+  border-color: #112244;
+  border-style: solid;
+
+  margin-top:    1.000em;
+  margin-bottom: 0.375em;
+  padding:       0.125em 0.000em 0.000em 0.188em;
+
+  line-height: 0.813em;
+
+     -moz-border-radius: 0.325em;
+  -webkit-border-radius: 0.325em;
+          border-radius: 0.325em;
+}
+
+div.content h1:first-child, div.content h2:first-child,
+div.content h3:first-child, div.content h4:first-child,
+div.content h5:first-child, div.content h6:first-child {
+  margin-top: 0.375em;
+}
+
+/* A header, when preceded by another header. (As the set of all such
+   combinations is combinatoric, this enumerates only the most common
+   combinations.) */
+div.content h1+h2,
+div.content h2+h3,
+div.content h3+h4,
+div.content h4+h5,
+div.content h5+h6 {
+  margin-top: 0.500em;
+}
+
+/* A paragraph, when preceded by a header. */
+div.content h1+p, div.content h2+p, div.content h3+p,
+div.content h4+p, div.content h5+p, div.content h6+p {
+  margin-top: 0.750em;
+}
+
+div.content h1, div.error h1 {
+  color: #9977ff;
+  border-width: 0.125em;
+  font-size:    2.125em;
+}
+
+div.content h2, div.error h2 {
+  color: #8866ee;
+  border-width: 0.064em;
+  font-size:    1.875em;
+}
+
+div.content h3, div.error h3 {
+  color: #7755dd;
+  border-width: 0.048em;
+  font-size:    1.625em;
+}
+
+div.content h4, div.error h4 {
+  color: #6644cc;
+  border-width: 0.048em;
+  font-size:    1.625em;
+}
+
+div.content h5, div.error h5 {
+  color: #5533bb;
+  border-width: 0.048em;
+  font-size:    1.375em;
+}
+
+div.content h6, div.error h6 {
+  color: #4422aa;
+  border-width: 0.048em;
+  font-size:    1.125em;
+}
+
+/* ....................{ ODDMUSE =block root elements       }.................... */
+/* Prefix subheadings with the escaped Unicode sequence for one or more m-dashes,
+   followed by the furthermore-escaped Unicode sequence for whitespace,
+   proportional to the nested depth of those subheadings. */
+div.include>h2:before,
+div.content>h2:before,
+div.preview>h2:before,
+div.hibernal_include>h2:before
+{ color: #112244; content: "~";     margin-right: 0.500em; }
+div.include>h3:before,
+div.content>h3:before,
+div.preview>h3:before,
+div.hibernal_include>h3:before
+{ color: #112244; content: "~~";    margin-right: 0.500em; }
+div.include>h4:before,
+div.content>h4:before,
+div.preview>h4:before,
+div.hibernal_include>h4:before
+{ color: #112244; content: "~~~";   margin-right: 0.500em; }
+div.include>h5:before,
+div.content>h5:before,
+div.preview>h5:before,
+div.hibernal_include>h5:before
+{ color: #112244; content: "~~~~";  margin-right: 0.500em; }
+div.include>h6:before,
+div.content>h6:before,
+div.preview>h6:before,
+div.hibernal_include>h6:before
+{ color: #112244; content: "~~~~~"; margin-right: 0.500em; }
+
+/* A link immediately under the main body. */
+div.include>a:visited, /* ...for some odd reason, this must be first. */
+div.content>a:visited,
+div.dialogue div.dialogue_script div.dialogue_script_line>a:visited,
+div.preview>a:visited,
+div.hibernal_include>a:visited {
+  color: #00aabb;
+}
+
+div.content>dl:first-child, div.include>dl:first-child, div.preview>dl:first-child,
+div.content>ul:first-child, div.include>ul:first-child, div.include>ul:first-child,
+div.dialogue div.dialogue_script div.dialogue_script_line>dl:first-child,
+div.dialogue div.dialogue_script div.dialogue_script_line>ul:first-child,
+div.hibernal_include>dl:first-child, div.hibernal_include>ul:first-child {
+  margin-top: 0.500em;
+}
+
+div.content>dl:last-child, div.include>dl:last-child, div.preview>dl:last-child,
+div.content>ul:last-child, div.include>ul:last-child, div.include>ul:last-child,
+div.dialogue div.dialogue_script div.dialogue_script_line>dl:last-child,
+div.dialogue div.dialogue_script div.dialogue_script_line>ul:last-child,
+div.hibernal_include>dl:last-child, div.hibernal_include>ul:last-child {
+  margin-bottom: 0.500em;
+}
+
+div.content>ol:first-child, div.include>ol:first-child, div.preview>ol:first-child,
+div.dialogue div.dialogue_script div.dialogue_script_line>ol:first-child,
+div.hibernal_include>ol:first-child {
+  margin-top: 0.188em;
+}
+
+div.content>ol:last-child, div.include>ol:last-child, div.preview>ol:last-child,
+div.dialogue div.dialogue_script div.dialogue_script_line>ol:last-child,
+div.hibernal_include>ol:last-child {
+  margin-bottom: 0.188em;
+}
+
+/* ....................{ ODDMUSE =boxes                     }.................... */
+/* A box encapsulating short, explanatory text. */
+div.imprint {
+  color:  #8899bb;
+  border: #112244 thin solid;
+
+  margin:  0.250em 0.000em;
+  padding: 0.000em 0.250em;
+
+  font-size: 0.688em;
+  text-align: center;
+  font-style: italic;
+}
+
+/* A box encapsulating long, metadata-ish text (e.g., footnotes, journal comments,
+   table of contents). */
+div.footnotes,
+div.toc {
+  background: #334466;
+  border:     #112244 0.125em solid;
+
+  padding:   0.250em 1.125em 0.500em 1.125em;
+  font-size: 0.875em;
+
+     -moz-border-radius: 0.750em;
+  -webkit-border-radius: 0.750em;
+          border-radius: 0.750em;
+}
+
+/* The header for the above box. */
+div.hibernal div.posts div.post_comments div.post_comments_header,
+div.hibernal_archive div.year div.month div.month_header,
+div.dialogue div.dialogue_sketch>h2,
+div.footnotes>h2,
+div.toc      >h2 {
+  border-top:   none;
+  border-left:  none;
+  border-right: none;
+
+  margin:      0.000em 0.000em 0.438em 0.000em;
+  padding:     0.000em 0.000em 0.500em 0.500em;
+  text-indent: 0.250em;
+
+  font-size: 0.875em;
+  font-style: italic;
+}
+
+/* A box invisibly encapsulating content. */
+div.nav {
+  margin: 0.500em 0.000em 0.500em 0.000em;
+}
+
+/* A box visibly encapsulating content. */
+div.content>div.include,
+div.preview>div.include,
+div.hibernal_archive div.year,
+div.hibernal div.posts,
+div.nav a {
+  border: #0055bb thin dashed;
+}
+
+/* A navigational link encapsulated by such a box. */
+div.nav a {
+  color: #dddddd;
+
+  margin:  0.000em;
+  padding: 0.375em 1.375em;
+
+  font-size: 0.813em;
+  font-weight: bold;
+}
+
+div.nav a:hover {
+  color:        #ff9999;
+  border-color: #1177ff;
+}
+
+/* A navigational link preceded by another. */
+div.nav a + a {
+  margin-left: 0.500em;
+}
+
+/* ....................{ ODDMUSE =header                    }.................... */
+/* Everything before "div.content" (e.g., the goto bar, logo, messages, special
+   days, and page title. */
+div.header {
+  border: #112244 0.333em solid;
+
+  margin-top:    0.750em;
+  margin-bottom: 0.375em;
+}
+
+/* A link in the header. */
+div.header a {
+  border: none;
+}
+
+/* The page title. */
+div.header h1, div.header h2, div.header h3,
+div.header h4, div.header h5, div.header h6 {
+  /* Make the typographical leading for headers slightly smaller than the
+     font height for those headers; this causes header text to "bleed" into the
+     surrounding box. */
+  font-size:   3.000em;
+  line-height: 1.000em;
+}
+
+/* The page (and journal page) subtitle. */
+div.header p.subtitle,
+div.hibernal div.posts div.post div.post_header p.subtitle {
+  color: #ffffff;
+
+  margin-top:  0.250em;
+  text-indent: 1.250em;
+
+  font-size: 0.875em;
+}
+
+/* Error messages, special days, et al., under "div.header". */
+div.header div.message {
+  /* Vertically center messages to the far right of headers. Sadly, as CSS lacks
+     a proper "vertical-align" property, I hack the position slightly. */
+  float: right;
+  top: 0.500em;
+
+  color: #9999bb;
+
+  font-size: 0.875em;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Typically, the link to the page from which this page was redirected to. */
+div.header div.message a {
+  font-size: 2.250em;
+  font-style: normal;
+}
+
+/* ....................{ ODDMUSE =footer                    }....................
+"div.footer" selects everything after "div.content": principally, the goto bar,
+links to other revisions and related links, validate links, and timings.
+*/
+div.footer {
+  border: #112244 thin solid;
+  padding: 0.000em 0.875em 0.250em 0.875em;
+
+  /* Mozilla-, Safari-, and CSS3-specific rounding of box corners; for the final
+     block for each page -- the footer -- round the upper corners, but not the
+     lower. (This has a pretty effect, methinks.)
+   */
+     -moz-border-radius-topleft:  1.000em;
+     -moz-border-radius-topright: 1.000em;
+  -webkit-border-radius-topleft:  1.000em;
+  -webkit-border-radius-topright: 1.000em;
+          border-radius-topleft:  1.000em;
+          border-radius-topright: 1.000em;
+}
+
+/* Hide the <hr> tag at the head of the footer content for every page. */
+div.footer hr:first-child { display: none }
+
+/* The gotobar is a row of links in the footer. Typically, it has these links:
+    "About Blog RecentChanges"
+
+   The editbar is a row of links in the footer. Typically, it has these links:
+    "Comments on About  Edit this page  View other revisions  Administration"
+
+   This selects both. */
+div.footer div.bar {
+  margin:    0.000em;
+  padding:   0.000em;
+  font-size: 0.875em;
+}
+
+/* A navigational link in either the gotobar or editbar. */
+div.footer div.bar a       { color: #667799; border: none; }
+div.footer div.bar a:hover { color: #99aacc; }
+
+/* A navigational link preceded by another in either the gotobar or editbar. */
+div.footer div.bar a + a {
+  border-left: #444488 thin dotted;
+  margin-left:  0.500em;
+  padding-left: 0.750em;
+}
+
+/* The gotobar. */
+div.footer div.gotobar {
+  margin-top: 0.250em;
+}
+
+/* The editbar. */
+div.footer div.edit {
+  margin-bottom: 0.250em;
+}
+
+/* The "Edit this page" link in the editbar. */
+div.footer div.edit a.edit       { color: #99aacc; font-weight: bold; }
+div.footer div.edit a.edit:hover { color: #ccddff; }
+
+div.footer div.time,
+div.footer form.search {
+  border-top: #112244 thin solid;
+  padding: 0.250em 0.000em;
+}
+
+/* The "Last edited..." string following the editbar. */
+div.footer div.time {
+  font-size: 0.688em;
+}
+
+/* The author of the last page edit in the "Last edited..." string in the footer. */
+/* Author has no associate Wiki page. */
+div.footer div.time span.author,
+div.rc form[method="post"] ul li span.author    { color: #999999; font-weight: bold; }
+/* Author has an associate Wiki page. */
+div.footer div.time              a.author,
+div.rc form[method="post"] ul li a.author       { color: #dd9999; font-weight: bold; }
+div.footer div.time              a.author:hover,
+div.rc form[method="post"] ul li a.author:hover { color: #ffdddd; }
+
+/* The search form in the footer. */
+div.footer form.search {
+  margin: 0.000em;
+}
+
+/* The footer paragraph describing this site's mirroring, if this site is. */
+div.footer p.mirrornote {
+  color:      #11eecc;
+  background: #112244;
+  border:     #001133 thin solid;
+
+  margin-top:     0.625em;
+  margin-bottom:  0.562em;
+  padding-top:    0.188em;
+  padding-bottom: 0.188em;
+
+  text-align: center;
+  font-size: 0.875em;
+}
+
+div.footer p.mirrornote a       { color: #bbbbee; }
+div.footer p.mirrornote a:hover { color: #eebbbb; }
+
+/* ....................{ ODDMUSE =content                   }.................... */
+/* The main body of the page. */
+div.content {
+  margin-top: 0.250em;
+}
+
+/* The first paragraph of the main body of the page. */
+div.content p:first-child {
+  margin-top: 0.500em;
+}
+
+/* ....................{ ODDMUSE =comment,edit              }.................... */
+/* The "~ optional" following the optional input field. */
+div.wrapper>div.edit    form.text    span.optional,
+div.wrapper>div.comment form.comment span.optional {
+  color: #556688;
+  margin-left: 0.375em;
+}
+
+/* ....................{ ODDMUSE =comment                   }.................... */
+/* Content (typically, form content) for page comments. */
+div.wrapper>div.comment {
+  padding-top:    1.000em;
+  padding-bottom: 0.000em;
+}
+
+/* The form for adding a comment. */
+div.comment form.comment { }
+
+/* The text area for commenting page text. */
+div.comment form.comment textarea#aftertext {
+  height:   18.000em; /* Roughly fifteen lines of text. */
+  font-size: 1.375em;
+}
+
+/* The "Username: " field, when commenting page text. */
+div.comment form.comment input#username {
+  margin-left: 2.500em;
+}
+
+/* The "Save", "Preview", and "Cancel" buttoms at the bottom. */
+div.comment form.comment input[type='submit'] {
+  margin-top:    0.500em;
+  margin-bottom: 0.325em;
+}
+
+/* The "This wiki uses Wiki Creole Markup..." text at the very bottom. */
+div.comment form.comment div.imprint {
+  margin-top:    0.500em;
+  margin-bottom: 0.500em;
+}
+
+/* ....................{ ODDMUSE =edit                      }.................... */
+/* Content (typically, form content) for page edits. */
+div.wrapper>div.edit {
+  padding-top:    0.750em;
+  padding-bottom: 0.000em;
+}
+
+p + div.wrapper>div.edit {
+  margin-top: 0.250em;
+}
+
+/* The form for editing a page. */
+div.wrapper>div.edit form.edit { }
+
+/* The form for editing text, when editing a page. */
+div.wrapper>div.edit form.text { }
+
+/* Any <br/> tag in the form for editing page text. */
+div.wrapper>div.edit form.text br { display: none; }
+
+/* The text area for editing page text. */
+div.wrapper>div.edit form.text textarea#text {
+  height:   24.000em; /* Roughly twenty lines of text. */
+  font-size: 1.375em;
+}
+
+div.wrapper>div.edit form.text textarea#text:hover {
+  color: #ffffff;
+}
+
+/* The "Summary: " multi-line text area, when editing page text. */
+div.wrapper>div.edit form.text textarea#summary {
+  margin-left: 1.250em;
+
+  height: 2.500em; /* Roughly two lines of text. */
+  width:  88.25%;  /* Roughly the width of its box, minus "Summary: ". */
+
+  vertical-align: text-top;
+}
+
+/* The "Replace this text with a file" link for editors and administrators. */
+div.wrapper>div.edit form.text p a.upload { }
+
+/* The "Save", "Preview", and "Cancel" buttoms at the bottom. */
+div.wrapper>div.edit form.text input[type='submit'] {
+  margin-top:    0.125em;
+  margin-bottom: 0.325em;
+}
+
+/* The "This wiki uses Wiki Creole Markup..." text at the very bottom. */
+div.wrapper>div.edit form.text div.imprint {
+  margin-top:    1.000em;
+  margin-bottom: 0.500em;
+}
+
+/* ....................{ ODDMUSE =recaptcha                   }.................... */
+/* The reCAPTCHA turk-captcha, for ensuring humans, not bots, edit page text. This
+   widget is displayed by both the edit and comment forms. */
+form[method="post"] div.question {
+  margin-top:    0.375em;
+  margin-bottom: 0.375em;
+}
+
+/* The reCAPTCHA's embedded iframe's extraneous text-area, when the reCAPTCHA
+   that turk-captcha cannot be displayed due to a lack of JavaScript support.
+   In such a common case, this text-area serves no purpose; and should be
+   hidden. Crush it, willfully! */
+form[method="post"] div.question noscript textarea { display: none; }
+
+/* The reCAPTCHA's introductory text. */
+form[method="post"] div.question>p:first-child {
+  margin-bottom: 0.000em;
+}
+
+/* The reCAPTCHA's embedded iframe. */
+form[method="post"] div.question div#recaptcha_area {
+  /* We can't seem to explicitly alter the color of this widget's "You are at
+     this page because you loaded the JavaScript free version..." The best we
+     can do, consequently, is alter its background to (at least) make it mostly
+     readable. */
+  border:           none        !important;
+  background-color: transparent !important;
+}
+
+/* The reCAPTCHA's outermost table. */
+form[method="post"] div.question div#recaptcha_area table {
+  border: #112244 thin solid !important;
+  table-layout: fixed;
+
+  /* The minimum width at which reCAPTCHA images remain unstretched. */
+  width: 65.0%;
+}
+
+/* The reCAPTCHA's outermost table elements. */
+form[method="post"] div.question div#recaptcha_area table a img,
+form[method="post"] div.question div#recaptcha_area table td {
+  background-color: transparent !important;
+  margin:  0.000em;
+  padding: 0.000em;
+}
+
+form[method="post"] div.question div#recaptcha_area
+  table td.recaptcha_image_cell div#recaptcha_image {
+  border:           none        !important;
+  background-color: transparent !important;
+}
+
+form[method="post"] div.question div#recaptcha_area table img#recaptcha_logo,
+form[method="post"] div.question div#recaptcha_area table img#recaptcha_tagline {
+  border:           #112244 thin solid;
+  background-color: #55aaff;
+  margin:  0.000em;
+  padding: 0.000em;
+}
+
+/* The reCAPTCHA's instructional text. */
+form[method="post"] div.question div#recaptcha_area
+                                    #recaptcha_instructions_image {
+  color: #840400;
+
+  font-style:  normal;
+  font-size:   1.438em;
+  line-height: 1.625em; /* 26px-high lines. (This is typographic "leading".) */
+}
+
+/* The reCAPTCHA's input field. */
+form[method="post"] div.question div#recaptcha_area
+                               input#recaptcha_response_field {
+  font-size: 1.000em;
+
+  /* Hackily align it to the CAPTCHA text above it. */
+  width: 91.5% !important;
+}
+
+/* ....................{ ODDMUSE =dialogue                    }.................... */
+/* A dialogue between one or more dialogists, as produced by the Dialogue module. */
+div.dialogue {
+  background: #334466;
+  border:     #001133 thin solid;
+
+  margin:  1.000em 0.000em;
+  padding: 0.500em 1.250em;
+}
+
+div.dialogue:first-child { margin-top:    0.500em; }
+div.dialogue:last-child  { margin-bottom: 0.500em; }
+
+/* The sketch for a dialogue. */
+div.dialogue div.dialogue_sketch {
+  background: #445577;
+  border:     #112244 0.125em solid;
+
+  margin:    0.500em 0.000em 0.000em 0.000em;
+  padding:   0.250em 1.125em 0.500em 1.125em;
+
+  font-size: 0.875em;
+}
+
+/* The header for the sketch for a dialogue. */
+div.dialogue div.dialogue_sketch>h2 {
+  color:         #8899bb;
+  border-bottom: #88aacc thin solid;
+  
+  margin: 0.250em 0.000em 0.750em 0.000em;
+  padding-bottom: 0.375em;
+}
+
+/* A sketch line in the sketch for a dialogue. This is a summary line linking to
+   a script line in the script for this dialogue. */
+div.dialogue div.dialogue_sketch div.dialogue_sketch_line {
+  line-height: 1.375em;
+}
+
+/* A sketch line's number in the sketch for a dialogue. */
+div.dialogue div.dialogue_sketch div.dialogue_sketch_line span.dialogue_sketch_number {
+  color: #bbccff;
+  font-weight: bold;
+}
+
+/* A sketch line's link in the sketch for a dialogue. */
+div.dialogue div.dialogue_sketch div.dialogue_sketch_line a {
+  color: #99aadd;
+  border-bottom-color: #556688;
+}
+div.dialogue div.dialogue_sketch div.dialogue_sketch_line a:hover {
+  color: #c0d0f0;
+}
+
+/* A script line in the script for a dialogue. */
+div.dialogue div.dialogue_script div.dialogue_script_line { }
+
+/* The actor's name in a dialogue. */
+div.dialogue div.dialogue_script div.dialogue_script_line
+  p span.dialogue_actor_name {
+  color: #c0d0f0;
+  font-size:    0.875em;
+  font-style:   italic;
+  font-variant: small-caps;
+}
+
+/* The first letter of an actor's name in a dialogue. */ 
+div.dialogue div.dialogue_script div.dialogue_script_line>
+  p:first-child:first-letter {
+  color: #ffffff;
+  margin-left: 0.500em;
+  font-size:   2.250em;
+}
+
+/* A script line in the script for a dialogue preceded by another. */
+div.dialogue div.dialogue_script div.dialogue_script_line +
+                                 div.dialogue_script_line {
+  margin-top: 1.000em;
+}
+
+/* The first actor in the script for a dialogue. */
+div.dialogue div.dialogue_script div.dialogue_actor_1 {
+  color:      #e0f0ff;
+  background: #603040;
+  border:     #300010 thin solid;
+
+  margin:  1.250em 0.000em 0.500em 0.000em;
+  padding: 0.125em 0.750em 0.250em 0.750em;
+
+  font-size:   1.063em;
+  line-height: 1.500em;
+}
+
+/* The first actor's first paragraph's first letter in the script for a dialogue. */
+div.dialogue div.dialogue_script div.dialogue_actor_1 p:first-child:first-letter {
+  margin-left: 0.000em;
+}
+
+/* A link for the first actor in the script for a dialogue. */
+div.dialogue div.dialogue_script div.dialogue_actor_1 p a {
+  color: #ff9999;
+  border-bottom-color: #774455;
+}
+div.dialogue div.dialogue_script div.dialogue_actor_1 p a:hover {
+  color: #22ddff;
+}
+
+/* The actor's name for the first actor in the script for a dialogue. */
+div.dialogue div.dialogue_script div.dialogue_actor_1 p span.dialogue_actor_name {
+  color: #f0c0d0;
+}
+
+/* ....................{ ODDMUSE =hibernal,hibernal archive }.................... */
+div.hibernal div.posts div.post_comments div.post_comments_header a,
+div.hibernal_archive div.year div.month div.month_header a {
+  color: #55aaff;
+  font-weight: bold;
+}
+
+div.hibernal div.posts div.post_comments div.post_comments_header a:hover,
+div.hibernal_archive div.year div.month div.month_header a:hover {
+  color: #aa77aa;
+}
+
+div.hibernal div.posts div.post_comments div.post_comments_header,
+div.hibernal_archive div.year div.month div.month_header {
+  border-bottom: #5599ee thin solid;
+  padding: 0.000em;
+}
+
+/* ....................{ ODDMUSE =hibernal                  }.................... */
+/* The "hibernal." This division encapsulates all pages transcluded into a page by
+   the <hibernal limit "regexp"> operation. */
+div.hibernal {
+  margin:  1.500em 0.000em;
+}
+
+div.hibernal:first-child { margin-top:    0.500em; }
+div.hibernal:last-child  { margin-bottom: 0.500em; }
+
+/* All journal entries. */
+div.hibernal div.posts {
+  padding: 0.000em 1.375em 1.000em 1.375em;
+}
+
+div.hibernal div.posts:first-child { margin-top:    0.500em; }
+div.hibernal div.posts:last-child  { margin-bottom: 0.500em; }
+
+div.hibernal div.posts + div.nav {
+  margin-top: 0.750em;
+}
+
+/* A blog post. */
+div.hibernal div.posts div.post { }
+
+/* A blog post header. */
+div.hibernal div.posts div.post div.post_header {
+  margin-top:    2.750em;
+  margin-bottom: 0.750em;
+}
+
+div.hibernal div.posts div.post:first-child div.post_header {
+  margin-top:    1.000em;
+}
+
+/* A blog post header title. */
+div.hibernal div.posts div.post div.post_header h1 {
+  margin-top: 0.000em;
+  border: none;
+}
+
+/* A blog post header title link. */
+div.hibernal div.posts div.post div.post_header h1 a       { color: #55aaff; }
+div.hibernal div.posts div.post div.post_header h1 a:hover { color: #bb88bb; }
+
+/* A blog post header subtitle. */
+div.hibernal div.posts div.post div.post_header p.subtitle {
+  padding-bottom: 0.375em;
+}
+
+/* A blog post's comments. */
+div.hibernal div.posts div.post_comments {
+  border: #112244 0.125em solid;
+
+  margin-top: 1.375em;
+  padding:    0.125em 1.500em;
+  font-size:  0.875em;
+
+     -moz-border-radius: 0.325em;
+  -webkit-border-radius: 0.325em;
+          border-radius: 0.325em;
+}
+
+/* ....................{ ODDMUSE =hibernal archive          }.................... */
+/* A calendar year. */
+div.hibernal_archive div.year {
+  padding: 0.000em;
+}
+
+/* A calendar month in the calendar year. */
+div.hibernal_archive div.year div.month {
+  margin:  0.000em 0.000em 0.000em 1.000em;
+  padding: 0.000em;
+}
+
+/* A calendar month's header. */
+div.hibernal_archive div.year div.month div.month_header {
+  margin-bottom:  0.500em;
+  padding-top:    0.000em;
+  padding-bottom: 0.125em;
+}
+
+/* A calendar month's body. */
+div.hibernal_archive div.year div.month div.month_body {
+  /* Monospaced fonts tend to appear slightly larger than non-. */
+  font-size: 0.938em;
+}
+
+/* A calendar month's day labels. */
+div.hibernal_archive div.year div.month div.month_body span.day_labels {
+  color: #33aaaa;
+}
+
+/* A calendar month day for which there is a corresponding Wiki page. */
+div.hibernal_archive div.year div.month div.month_body a.local {
+  color: #55cccc;
+  font-weight: bold;
+}
+
+div.hibernal_archive div.year div.month div.month_body a.local:hover {
+  color: #ff8888;
+}
+
+/* A calendar month day for which there is no corresponding Wiki page. */
+div.hibernal_archive div.year div.month div.month_body a.edit {
+  color: #667799;
+}
+
+div.hibernal_archive div.year div.month div.month_body a.edit:hover {
+  color: #77eeee;
+}
+
+/* The calendar month day corresponding to today. */
+div.hibernal_archive div.year div.month div.month_body a.today {
+  padding-left:  0.063em;
+  padding-right: 0.125em;
+
+  /* Offset the paddings, above; so as not to disrupt day spacing, afterward. */
+  margin-left:  -0.125em;
+  margin-right: -0.188em;
+
+  border: #77bbff thin dashed;
+}
+
+/* ....................{ ODDMUSE =footnotes                 }.................... */
+/* A footnote number as referenced in the body content for a page. */
+a.footnote {
+  border: none;
+  
+  /* The following attributes mimic superscript-style footnotes. */
+  line-height: 0.000em; /* Prevent excess vertical whitespace. */
+  font-size:   0.625em;
+  font-style:  normal;
+  font-weight: bold;
+  text-decoration: none;
+  vertical-align:  super;
+}
+
+/* The list of footnotes and footnote numbers for that page. */
+div.footnotes {
+  margin-top:     1.750em;
+  margin-bottom:  1.750em;
+  padding-bottom: 0.563em;
+  line-height:    1.375em;
+}
+
+div.footnotes:first-child { margin-top:    0.500em; }
+div.footnotes:last-child  { margin-bottom: 0.500em; }
+
+/* The header for the list of footnotes. */
+div.footnotes>h2 {
+  color:         #aa8888;
+  border-bottom: #aa9999 thin solid;
+
+  margin-bottom:  0.750em;
+  padding-bottom: 0.375em;
+}
+
+/* A footnote in the list of footnotes. */
+div.footnotes div.footnote {
+  color: #aaaaaa;
+
+  /* Indent every line of each footnote in the list of footnotes, except the first,
+     past the number for that footnote. */
+  text-indent: -2.125em;
+  padding-left: 2.125em;
+}
+
+/* The first footnote in the list of footnotes. */
+div.footnotes div.footnote:first-child    { margin-top: 0.000em; }
+
+/* A footnote preceded by another footnote in the list of footnotes. */
+div.footnotes div.footnote + div.footnote { margin-top: 0.375em; }
+
+/* A footnote link in the list of footnotes (to the original footnote in the body
+   content for that page). */
+div.footnotes a.footnote_backlink {
+  margin-right: 0.375em;
+  font-weight:     normal;
+  text-decoration: none;
+}
+
+a.footnote,       a.footnote_backlink       { color: #bb8888; }
+a.footnote:hover, a.footnote_backlink:hover { color: #ffcccc; }
+
+/* ....................{ ODDMUSE =toc                       }.................... */
+/* The table of contents for a page. */
+div.toc {
+  margin-top:    1.500em;
+  margin-bottom: 0.000em; /* This is done, de facto, by the "margin-top" below. */
+}
+
+div.toc:first-child {
+  margin-top:    0.500em;
+}
+
+/* A header preceded by the table of contents. */
+div.toc + h1, div.toc + h2, div.toc + h3,
+div.toc + h4, div.toc + h5, div.toc + h6 {
+  margin-top: 0.813em;
+}
+
+/* A paragraph preceded by the table of contents. */
+div.toc + p {
+  margin-top: 1.250em;
+}
+
+/* The header for the table of contents. */
+div.toc>h2 {
+  color:         #8888aa;
+  border-bottom: #9999aa thin solid;
+}
+
+/* The entries in the table of contents. */
+div.toc ol {
+  background: transparent;
+  border:     none;
+
+  margin-top:    0.000em;
+  margin-left:   2.500em;
+  margin-bottom: 0.000em;
+  padding:       0.000em;
+
+  font-size:     1.000em;
+  
+  /* Prevent rounding of this list's border corners. */
+     -moz-border-radius: 0.000em;
+  -webkit-border-radius: 0.000em;
+          border-radius: 0.000em;
+}
+
+/* An entry in the table of contents. */
+div.toc ol li {
+  color: #8888bb;
+  line-height: 1.250em;
+  font-weight: bold;
+}
+
+/* A sub-entry in the table of contents. */
+div.toc ol>li>ol {
+  margin-left: 1.688em;
+}
+
+/* An entry link in the table of contents (to a header in that page). */
+div.toc ol li a       { color: #aaaaaa; font-weight: normal; }
+div.toc ol li a:hover { color: #ffffff; font-weight: normal; }
+
+/* ....................{ ODDMUSE =included                  }.................... */
+/* A page [in|trans]cluded into another page. */
+div.include {
+  margin:  1.000em 0.000em;
+  padding: 0.250em 1.250em 0.750em 1.250em;
+}
+
+/* ....................{ ODDMUSE =poem                      }.................... */
+/* A poem. */
+pre.poem {
+  color:      #e0f0ff;
+  background: #334460;
+  border:     #112255 0.125em solid;
+
+  margin:  1.250em 1.250em;
+  padding: 1.000em 1.125em;
+
+  font-style: normal;
+  font-size:   1.063em;
+  line-height: 1.500em;
+
+     -moz-border-radius: 0.500em;
+  -webkit-border-radius: 0.500em;
+          border-radius: 0.500em;
+}
+
+/* A haiku. */
+pre.haiku { }
+
+pre.poem:first-child { margin-top:    1.125em; }
+pre.poem:last-child  { margin-bottom: 0.875em; }
+
+/* The first letter of the first stanza of a poem. */
+pre.poem p:first-child:first-letter {
+  color:     #ffffff;
+  font-size: 2.250em;
+}
+
+/* The first letter of the first stanza of a haiku. */
+pre.haiku p:first-child:first-letter {
+  color:     #e0f0ff;
+  font-size: 1.063em;
+}
+
+/* A link in a poem stanza. */
+pre.poem>p a       { color: #e0f0ff; border-bottom: #556680 thin dotted; }
+pre.poem>p a:hover { color: #22ddff; }
+
+/* Italicized text in a poem stanza. */
+pre.poem>p em { font-style: italic; }
+
+/* An ordered list in a poem. */
+pre.poem>ol {
+  font-size: 1.000em;
+}
+
+/* ....................{ ODDMUSE =rc (recentchanges)        }.................... */
+/* The "RecentPages" page. (Specifically, all content between the "div.content"
+   and "div.refer" blocks for that page.) */
+div.rc {
+  padding-top:    0.500em;
+  padding-bottom: 0.500em;
+}
+
+/* Hide the <hr> tag at the head of recent changes. */
+div.rc hr { display: none }
+
+/* The header for recent changes. */
+div.rc h2 {
+  color:         #55aaff;
+  border-bottom: #5599ee thin solid;
+
+  margin:  0.000em 0.625em 0.000em 0.625em;
+  padding: 0.375em 0.625em 0.125em 0.625em;
+
+  line-height: 1.000em;
+  font-size:   0.875em;
+  font-style:  italic;
+  font-weight: bold;
+}
+
+/* Navigational links for recent changes. */
+div.rc h2 + p {
+  margin: 0.750em 0.000em;
+
+  font-size: 0.813em;
+  font-weight: bold;
+}
+
+/* A navigational link. */
+div.rc h2 + p a {
+  color:  #667799;
+  border: #444488 thin dotted;
+
+  margin:  0.000em;
+  padding: 0.375em 1.375em;
+}
+
+div.rc h2 + p a:hover {
+  color:  #99aacc;
+  border-style: solid;
+}
+
+/* A navigational link preceded by another. */
+div.rc h2 + p a + a {
+  margin-left: 0.500em;
+}
+
+/* A navigational link in a set of many such navigational links. */
+div.rc h2 + p a {
+  line-height: 2.500em;
+}
+
+/* A link to the RSS for recent changes. */
+div.rc h2 + p a.rss {
+  font-style: italic;
+}
+
+/* The list of recent changes. */
+div.rc form[method="post"] {
+  background: #112244;
+  border:     #001133 thin solid;
+
+  margin-top:    0.500em;
+  margin-bottom: 0.500em;
+  padding:       0.125em 1.250em;
+}
+
+/* A day in the list of recent changes. */
+div.rc form[method="post"] p {
+  /* Prevent this border from stretching across the entirety of the form's width. */
+  border-top: #444488 thin dotted;
+  width: 97.5%;
+
+  margin-top:    0.625em;
+  margin-bottom: 0.000em;
+  padding-top:   0.250em;
+}
+
+/* The heading for a day in the list of recent changes. */
+div.rc form[method="post"] p strong {
+  font-size: 1.125em;
+}
+
+/* A subsequent day, in the list of recent changes. */
+div.rc form[method="post"] ul + p {
+  margin-top: 1.250em;
+}
+
+/* The list of changes for an individual day. */
+div.rc form[method="post"] ul {
+  margin-top:    0.000em;
+  margin-bottom: 0.500em; /* 16px. */
+}
+
+/* The 'new' text instead of the diff link when listing new pages on the list of
+   Recent changes. */
+div.rc form[method="post"] ul li span.new { }
+
+/* Any link in the details for a change. */
+div.rc form[method="post"] ul li a:hover,
+div.rc form[method="post"] ul li a.local:hover { color:  #ffbbbb; }
+/* The page name for a change. */
+div.rc form[method="post"] ul li a.local       { color:  #ffffff; font-weight: bold; }
+
+/* The change-specific link to the diff, history, and page for that change. */
+div.rc form[method="post"] ul li a + a {
+  /* Do not separate these links by horizontal whitespace, since Oddmuse already
+     separates them by demarcating characters (e.g., '(', ')', "..."). */
+  margin-left: 0.000em; 
+}
+
+/* The n-dash separating a change's timestamp from text summary. */
+div.rc form[method="post"] ul li span.dash { color: #ccccee; }
+
+/* The text summary for a change. */
+div.rc form[method="post"] ul li span.dash + strong {
+  color: #bbbbff;
+
+  font-size: 1.063em;
+  font-style: italic;
+  font-weight: normal;
+}
+
+/* The form for specifying change filters. */
+div.rc form.filter {
+  border: #112244 thin solid;
+
+  margin:  0.875em 0.000em 0.000em 0.000em;
+  padding: 0.438em 0.000em 0.438em 0.625em;
+}
+
+/* The header for the form for specifying change filters. */
+div.rc form.filter p:first-child {
+  color:         #66bbff;
+  border-bottom: #66aaee thin solid;
+
+  margin:  0.000em 0.625em 0.438em 0.625em;
+  padding: 0.000em 0.625em 0.125em 0.625em;
+
+  line-height: 1.000em;
+  font-size:   0.688em;
+  font-style:  italic;
+  font-weight: bold;
+}
+
+/* The table encapsulating individual filters. */
+div.rc form.filter table {
+  font-size: 0.688em;
+}
+
+/* The labels for the form for specifying change filters. */
+div.rc form.filter table label         { color: #667799; }
+
+/* The "Go!" input for the form for specifying change filters. */
+div.rc form.filter table p input       { color: #aabbcc; }
+div.rc form.filter table p input:hover { color: #ffffff; }
+
+/* The inputs for the form for specifying change filters. */
+div.rc form.filter table input {
+  margin-top:     0.000em;
+  margin-bottom:  0.000em;
+}
+
+/* ....................{ ODDMUSE =rss                       }.................... */
+/* "div.rss" selects RSS feeds included from elsewhere. */
+div.rss { }
+div.rss li span.time { display: none; }
+div.rss .description { font: medium monospace; display: inline; }
+
+/* ....................{ ODDMUSE =crossbar                   }.................... */
+/* The crossbar added to each page. */
+div.crossbar {
+  /* Float the crossbar left of all other page content. */
+  float: left;
+  width: 16%;
+
+  font-size: 0.750em;
+}
+
+/* The message prefixing the edit field, when editing the crossbar's page. */
+div.wrapper>div.edit p.crossbar_edit_message {
+  margin-top:    0.000em;
+  margin-bottom: 0.875em;
+}
+
+/* ....................{ CHANGES                            }.................... */
+div.old { background-color: #ffffaa }
+div.new { background-color: #ccffcc }
+
+/* ....................{ DEFINITIONS                        }.................... */
+p a.definition {
+  color: #666666;
+  border-bottom: #000000 thin solid;
+  padding:    0.250em;
+  margin-top: 0.500em;
+  text-decoration: none;
+
+  display: block;
+  clear: both;
+}
+
+p a.definition:hover {
+  background: #000000;
+  color:      #ffffff;
+}
+
+/* ....................{ USER HISTORY                       }.................... */
+/* The table used to format the history pages. */
+table.history,
+td.history { border-style: none; }
+
+/* ....................{ AUTO REFERRAL EXTENSION            }....................
+"div.refer" selects the optional block having auto-added referrers (between the
+"div.content" and the "div.footer").
+*/
+div.refer { padding-left: 5%; padding-right: 5%; font-size: smaller; }
+div[class="content refer"] p { margin-top: 2em; }
+div.content div.refer hr { display: none; }
+div.content div.refer { padding: 0; font-size: medium; }
+div.content div.refer p { margin: 0; }
+div.refer a { display: block; }
+
+/* ....................{ WHEN PRINTING                      }.................... */
+@media print {
+  body { font: 11pt "Neep", "Arial", sans-serif; }
+  img[smiley] { line-height: inherit; }
+  pre { border: 0; font-size: 10pt; }
+
+  a,
+  a:link {
+    color: #000000;
+    text-decoration: none;
+    font-style: oblique;
+    font-weight: normal;
+  }
+
+  a.edit,
+  div.footer,
+  div.refer,
+  form,
+  span.gotobar,
+  a.number span { display:none; }
+
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a { font-style: normal; }
+
+  a[class="url number"]:after,
+  a[class="inter number"]:after { content: "[" attr(href)  "]"; }
+  a[class="local number"]:after { content: "[" attr(title) "]"; }
+}
+
+/* --------------------( COPYRIGHT AND LICENSE              )--------------------
+The information below applies to everything in this distribution,
+except where noted.
+
+Copyleft 2008 by B.w.Curry.
+
+  http://www.raiazome.com
+
+This file is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This file is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this file; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA. */

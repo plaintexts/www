@@ -1,0 +1,30 @@
+!StrawBerryPerl
+----
+
+* CPAN install Glib
+    
+    在命令行中，Pkg-Config能够找到Glib的信息。
+    perl Makefile.pl：提示找不到几个lib。
+    dmake：link时出错，unresolved refenences。
+    
+    原因在于MakeMaker.pm只接收*.a格式的lib文件。
+    解决方法是将Gtk2\lib目录下的*.lib文件复制或重命名为*.a。
+
+* CPAN install Pango
+
+    Pango依赖于Cario,Cario编译成功。
+    dmake：link时，Pango出错，unresolved references.（都是与cario有关）
+    
+    原因同上，解决方法是将Gtk2\lib目录下的*.dll.a文件复制或重命名为*.a
+    
+---------<META>---------
+ip: 127.0.0.1
+ts: 1251135352
+minor: 
+host: venus-vista
+username: 
+revision: 2
+summary: == StrawBerryPerl * CPAN install Glib          在命令行中，Pkg-Config能够找到Glib的信息。     perl . . .
+languages: 
+lastmajor: 2
+keep-ts: 1251135379

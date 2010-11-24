@@ -1,0 +1,39 @@
+img.smiley[alt=":)"], img.smiley[alt=":-)"] 
+    { background: url(face-smile.png); padding-left: 16px; height: 16px; width: 0; }
+img.smiley[alt=";)"], img.smiley[alt=";-)"] 
+    { background: url(face-wink.png); padding-left: 16px; height: 16px; width: 0; }
+img.smiley[alt=":("], img.smiley[alt=":-("] 
+    { background: url(face-sad.png); padding-left: 16px; height: 16px; width: 0; }
+img.smiley[alt=":D"], img.smiley[alt=":-D"] 
+    { background: url(face-grin.png); padding-left: 16px; height: 16px; width: 0; }
+img.smiley[alt=":'("], img.smiley[alt=":'-)"] 
+    { background: url(face-crying.png); padding-left: 16px; height: 16px; width: 0; }
+
+img.smiley[alt=":\\"], img.smiley[alt=":-\\"], 
+img.smiley[alt=":/"], img.smiley[alt=":-/"], 
+img.smiley[alt=":|"], img.smiley[alt=":-|"] 
+    { background: url(face-plain.png); padding-left: 16px; height: 16px; width: 0; }
+
+
+img.smiley[alt=":P"], img.smiley[alt=":-P"]
+    { background: url(face-monkey.png); padding-left: 16px; height: 16px; width: 0; }
+img.smiley[alt=":]"], img.smiley[alt=":-]"] 
+    { background: url(face-smile-big.png); padding-left: 16px; height: 16px; width: 0; }
+img.smiley[alt="B)"], img.smiley[alt="B-)"], 
+img.smiley[alt="8)"], img.smiley[alt="8-)"], 
+img.smiley[alt="8D"], img.smiley[alt="8-D"] 
+    { background: url(face-glasses.png); padding-left: 16px; height: 16px; width: 0; }
+img.smiley[alt="O:)"], img.smiley[alt="O:-)"] 
+    { background: url(face-angel.png); padding-left: 16px; height: 16px; width: 0; }
+img.smiley[alt=">:)"], img.smiley[alt=">:-)"], 
+img.smiley[alt="&gt;:)"], img.smiley[alt="&gt;:-)"], 
+img.smiley[alt="]:)"], img.smiley[alt="]:-)"] 
+    { background: url(face-devil-grin.png); padding-left: 16px; height: 16px; width: 0; }
+img.smiley[alt=":*"], img.smiley[alt=":-*"] 
+    { background: url(face-kiss.png); padding-left: 16px; height: 16px; width: 0; }
+img.smiley[alt=":O"], img.smiley[alt=":-O"], 
+img.smiley[alt="=)"], img.smiley[alt=":=-)"] 
+    { background: url(face-surprise.png); padding-left: 16px; height: 16px; width: 0; }
+
+img.smiley[alt="<3"], img.smiley[alt="&lt;3"] 
+    { background: url(emblem-favorite.png); padding-left: 16px; height: 16px; width: 0; }

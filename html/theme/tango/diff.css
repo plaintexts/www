@@ -1,0 +1,33 @@
+
+div.diff {
+    margin: 2em;
+    padding-bottom: 1em;
+    border-bottom: 2px solid #936;
+}
+
+div.diff p {
+    margin: 0;
+}
+
+div.diff div.old {
+    background: #ffa;
+    color: #850;
+    padding: 0.5em;
+    border: 1px dashed #850;
+    margin: 0.25em;
+}
+div.diff div.new {
+    background: #efc;
+    color: #670;
+    padding: 0.5em;
+    border: 1px dashed #670;
+    margin: 0.25em;
+}
+div.diff div.old p:first-letter,
+div.diff div.new p:first-letter {
+    font-weight: bold;
+    color: #000;
+    font-size: 12pt;
+}
+
+

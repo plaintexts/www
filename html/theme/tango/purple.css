@@ -1,0 +1,6 @@
+p a.plink, li a.plink {
+    display:none;
+}
+p:hover a.plink, p a:hover.plink, li:hover a.plink, li a:hover.plink {
+    text-decoration: none; display: inline; position:absolute; color: #75507b; border: none;
+}

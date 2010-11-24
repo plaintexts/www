@@ -1,0 +1,17 @@
+====== Fedora Repositories ======
+Created Saturday 06/01/2007
+
+* Core
+* http://download.fedora.redhat.com/pub/fedora/linux/core/6/i386/os/repodata/
+* Updates
+* Extras
+* http://download.fedora.redhat.com/pub/fedora/linux/extras/6/i386/repodata/
+* Livna
+* Freshrpms
+* Atrpms
+* Rpmforge
+---------<META>---------
+revision: 1
+ts: 1251140525
+keep-ts: 1251140556
+username: xiaoranzzz

@@ -1,0 +1,11 @@
+/* Make the first paragraph of a page into an abstract. */
+
+.content > p:first-child {
+    font-style: italic;
+    font-size: 14pt; 
+    background: #f5f5f5; 
+    padding: 6pt; 
+    border: 1px solid #999; 
+    margin: 6pt -6pt; 
+    color: #444;
+}
